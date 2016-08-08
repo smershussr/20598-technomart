@@ -8,12 +8,12 @@
     <header class="page-header">
       <div class="header-top">
         <div class="container">
-          <a class="logo" href="index.html"><img src="img/logo.png" width="220" height="42" alt="Техномарт"></a>
+          <a class="logo" href="index.html">Техномарт</a>
           <form class="search" action="#" method="post">
             <button class="btn-search" type="submit"><span class="icon-search"></span></button>
-            <input type="input" placeholder="Поиск:">
+            <input type="text" placeholder="Поиск:">
           </form>
-          <div class="header-top-right">
+          <div class="user-controls">
             <a class="bookmarks" href="#"><span class="icon-bookmark"></span>Закладки: 0</a>
             <a class="cart cart-full" href="#"><span class="icon-cart"></span>Корзина: 10</a>
             <a class="order" href="#">Оформить заказ</a>
@@ -33,10 +33,10 @@
                 <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
               </div>
               <div class="user-block-active">
-                <a href="#"><span class="icon-user"></span>Равшан Джамшутович<a/>
-                <a href="#"><span class="icon-logout"></span><a/>
-                <a href="#">Мои заказы<a/>
-                <a href="#">Личный кабинет<a/>
+                <a href="#"><span class="icon-user"></span>Равшан Джамшутович</a>
+                <a href="#"><span class="icon-logout"></span></a>
+                <a href="#">Мои заказы</a>
+                <a href="#">Личный кабинет</a>
               </div>
             </div>
             <nav class="main-menu">
@@ -55,25 +55,26 @@
     <main>
       <div class="container">
         <div class="breadcrumbs">
-          <a href="#"><span class="icon-home"></span></a>
+          <a href="#"><span class="icon-home"></span>Главная</a>
           <a href="#">Каталог</a>
           <a href="#">Инструмент</a>
-          <a href="#">Первораторы</a>
+          <a>Перфораторы</a>
         </div>
         <h1>Перфораторы</h1>
         <div class="catalog">
           <div class="catalog-filters">
             <form action="#" method="post">
-              <p class="filters-title">Фильтр:</p>
+              <div class="filters-title">Фильтр:</div>
               <div class="price-block">
                 <h2>Цена:</h2>
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
-                      <div class="bar"></div>
+                      <div class="bar">
+                        <div class="toggle min-toggle"></div>
+                        <div class="toggle max-toggle"></div>
+                      </div>
                     </div>
-                    <div class="toggle min-toggle"></div>
-                    <div class="toggle max-toggle"></div>
                   </div>
                   <div class="price-controls">
                     <input class="min-price" type="text" value="0">
@@ -82,7 +83,7 @@
                 </div>
               </div>
               <hr>
-              <div class="manufacturers-block">
+              <div class="filter-block">
                 <h2>Производители:</h2>
                 <input type="checkbox" name="bosch" id="bosch-id" checked>
                 <label for="bosch-id">Bosch</label>
@@ -96,7 +97,7 @@
                 <label for="hitachi-id">Hitachi</label>
               </div>
               <hr>
-              <div class="power-type-block">
+              <div class="filter-block">
                 <h2>Питание:</h2>
                 <input type="radio" name="power-type-item" id="battery-supply" value="battery supply" checked>
                 <label for="battery-supply">Аккумуляторные</label>
@@ -108,7 +109,7 @@
           </div>
           <section class="products">
             <div class="products-sortinbg">
-                <p class="sorting-title">Сотртировка:</p>
+                <div class="sorting-title">Сотртировка:</div>
                 <div class="sorting-options">
                   <a class="option option-active" href="#">По цене</a>
                   <a class="option" href="#">По типу</a>
@@ -217,10 +218,10 @@
               <div class="price">12500 Р.</div>
             </article>
             <div class="catalog-paginator">
-              <span class="btn-panigator-active">1</span>
+              <a class="btn-panigator btn-panigator-active">1</a>
               <a class="btn-panigator" href="#">2</a>
               <a class="btn-panigator" href="#">3</a>
-              <a class="btn-panigator-next" href="#">Следующая</a>
+              <a class="btn-panigator btn-panigator-next" href="#">Следующая</a>
             </div>
           </section>
         </div>
@@ -228,11 +229,9 @@
       <section class="products-about">
         <div class="container">
           <h2 class="about-title">Пара слов о перфораторах</h2>
-          <p>
-            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
-            ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-          </p>
+          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<p>
+          <p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
+            ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </siv>
       </section>
     </main>
