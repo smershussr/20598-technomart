@@ -10,12 +10,12 @@
         <div class="container">
           <a class="logo">Техномарт</a>
           <form class="search" action="#" method="post">
-            <button class="btn-search" type="submit"><span class="icon-search"></span></button>
+            <button class="btn-search" type="submit"></button>
             <input type="text" placeholder="Поиск:">
           </form>
           <div class="user-controls">
-            <a class="bookmarks" href="#"><span class="icon-bookmark"></span>Закладки: 0</a>
-            <a class="cart" href="#"><span class="icon-cart"></span>Корзина: 0</a>
+            <a class="bookmarks" href="#">Закладки: 0</a>
+            <a class="cart" href="#">Корзина: 0</a>
             <a class="order" href="#">Оформить заказ</a>
           </div>
         </div>
@@ -29,11 +29,11 @@
                 и инструментов для ремонта
               </p>
               <div class="header-contacts">
-                <a href="tel:+78125550555"><span class="icon-phone"></span>+7 (812)555-05-55</a>
+                <a href="tel:+78125550555">+7 (812)555-05-55</a>
                 <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
               </div>
               <div class="user-block">
-                <a href="#"><span class="icon-enter"></span>Войти</a>
+                <a href="#">Войти</a>
                 <a href="#">Регистрация</a>
               </div>
             </div>
@@ -52,7 +52,7 @@
 
     <main>
       <div class="container">
-        <div class="promo-block">
+        <section class="promo-block">
           <div class="promo promo-materials flag-new">
             <span>Материалы</span>
             <a href="#">на любой вкус</a>
@@ -69,8 +69,14 @@
             <input type="radio" name="toogle" id="toogle-promo-1" checked>
             <input type="radio" name="toogle" id="toogle-promo-2">
             <div class="slider-arrows">
-              <label for="toogle-promo-1"></label> <!-- Стрелка влево -->
-              <label for="toogle-promo-2"></label> <!-- Стрелка вправо -->
+              <div class="slider-arrows-1">
+                <label for="toogle-promo-1" class="arrow-disabled"></label>
+                <label for="toogle-promo-2"></label>
+              </div>
+                <div class="slider-arrows-2">
+                  <label for="toogle-promo-1"></label>
+                  <label for="toogle-promo-2 class="arrow-disabled""></label>
+                </div>
             </div>
             <div class="slider-controls">
               <label for="toogle-promo-1"></label>
@@ -83,7 +89,7 @@
                   <span class="slider-title">Перфораторы</span>
                   <span class="slider-description">Настоящие мужские игрушки</span>
                 </div>
-                <a class="btn btn-catalog" href="#"></a>
+                <a class="btn btn-catalog" href="#">Открыть каталог</a>
               </div>
               <div class="slide-promo2">
                 <img src="img/slide2.png" width="620" height="266" alt="Дрели">
@@ -103,8 +109,8 @@
             <span>Доставка</span>
             <a href="#">бесплатно</a>
           </div>
-        </div>
-        <div class="popular-products">
+        </section>
+        <section class="popular-products">
           <div class="title-block">
             <h2>Популярные товары:</h2>
             <a class="btn btn-catalog-popular" href="#">Все популярные товары</a>
@@ -136,8 +142,8 @@
               <div class="price">12500 Р.</div>
             </article>
           </div>
-        </div>
-        <div class="brands">
+        </section>
+        <section class="brands">
           <div class="title-block">
             <h2>Производители:</h2>
             <a class="btn btn-catalog-brands" href="#">Все производители</a>
@@ -152,9 +158,9 @@
             <a class="brands-item" href="#"><img src="img/aeg.png" width="218" height="143" alt="AEG"></a>
             <a class="brands-item" href="#"><img src="img/metabo.png" width="218" height="143" alt="Metabo"></a>
           </div>
-        </div>
+        </section>
       </div>
-      <div class="services">
+      <section class="services">
         <div class="container">
           <div class="services-title">
             <h2>Сервисы</h2>
@@ -203,11 +209,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div class="container">
-        <div class="info">
+        <section class="info">
           <div class="info-left">
-            <h2>Компания &laquo;Техномарт&raquo;</h2>
+            <h1>Компания &laquo;Техномарт&raquo;</h1>
             <p>
               Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
               строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
@@ -234,7 +240,7 @@
             </div>
             <a class="btn btn-write-us" href="#">Заблудились? Напишите нам!</a>
           </div>
-        </div>
+        </section>
       </div>
     </main>
 
@@ -242,7 +248,7 @@
       <div class="footer-top">
         <div class="container">
           <div class="footer-top-left">
-            <a class="logo"><img src="img/logo.png" width="220" height="68" alt="Техномарт"></a>
+            <a class="logo">Техномарт</a>
             <div class="footer-contacts">
               <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
               <a href="tel:+78125550555">+7 (812)555-05-55</a>
@@ -278,7 +284,7 @@
           </section>
           <section class="footer-feedback">
             <p>Обратная связь:</p>
-            <a class="link" href="mailto:mail@htmlacademy.ru?subject=Текст темы письма">mail@htmlacademy.ru</a>
+            <a class="link" href="mailto:mail@htmlacademy.ru?subject=Текст%20темы%20письма">mail@htmlacademy.ru</a>
           </section>
           <section class="footer-developers">
             <p>Разработано:</p>
