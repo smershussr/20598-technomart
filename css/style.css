@@ -13,7 +13,7 @@ body {
   text-transform: uppercase;
 }
 
-.title-block h2,
+.section-title,
 .page-title {
   font-weight: bold;
   font-size: 30px;
@@ -29,12 +29,16 @@ body {
   line-height: 20px;
 }
 
-.services-title h2,
-.info-right h2,
+.services-title,
+.info-title,
 .about-title {
   font-size: 30px;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+.info-left .info-title {
+  line-height: normal;
 }
 
 .slider-services .slide-title {
@@ -42,12 +46,6 @@ body {
   line-height: 24px;
   text-transform: uppercase;
   color: #32425c;
-}
-
-.info-left h1 {
-  font-size: 30px;
-  line-height: normal;
-  text-transform: uppercase;
 }
 
 .filters-title,
@@ -59,7 +57,7 @@ body {
 
 }
 
-.catalog-filters h2 {
+.filter-block-title {
   font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-size: 17px;
   line-height: 30px;
