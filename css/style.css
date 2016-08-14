@@ -1,0 +1,66 @@
+
+:root { /* Возвращает корневой элемент - html*/
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.slider-promo .slider-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.section-title,
+.page-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.products-item .title {
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.services-title,
+.info-title,
+.about-title {
+  font-size: 30px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.info-left .info-title {
+  line-height: normal;
+}
+
+.slider-services .slide-title {
+  font-size: 36px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.filters-title,
+.sorting-title {
+  font-family: "PT Sans", "Arial", "Helvetica" sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+}
+
+.filter-block-title {
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
