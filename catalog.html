@@ -8,13 +8,13 @@
   <body>
     <header class="page-header">
       <div class="header-top">
-        <div class="container">
+        <div class="container clearfix">
           <a class="logo" href="index.html">Техномарт</a>
           <form class="search" action="#" method="post">
             <button class="btn-search" type="submit"></button>
             <input type="search" placeholder="Поиск:">
           </form>
-          <div class="user-controls">
+          <div class="user-controls clearfix">
             <a class="bookmarks" href="#">Закладки: 0</a>
             <a class="cart cart-full" href="#">Корзина: 10</a>
             <a class="order" href="#">Оформить заказ</a>
@@ -23,7 +23,7 @@
       </div>
       <div class="header-bottom">
         <div class="container">
-            <div class="header-bottom-wrapper">
+            <div class="header-bottom-wrapper clearfix">
               <p class="shop-description">
                 Интернет-магазин
                 строительных товаров
@@ -62,12 +62,12 @@
           <a>Перфораторы</a>
         </div>
         <h1 class="page-title">Перфораторы</h1>
-        <div class="catalog">
+        <div class="catalog clearfix">
           <div class="catalog-filters">
             <form action="#" method="get">
               <div class="filters-title">Фильтр:</div>
               <div class="price-block">
-                <h2>Цена:</h2>
+                <h2 class="price-block-title">Цена:</h2>
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
@@ -83,7 +83,7 @@
                   </div>
                 </div>
               </div>
-              <hr>
+              <hr class="filter-block-separator">
               <div class="filter-block">
                 <h2 class="filter-block-title">Производители:</h2>
                 <input type="checkbox" name="bosch" id="bosch-id" checked>
@@ -97,7 +97,7 @@
                 <input type="checkbox" name="hitachi" id="hitachi-id">
                 <label for="hitachi-id">Hitachi</label>
               </div>
-              <hr>
+              <hr class="filter-block-separator">
               <div class="filter-block">
                 <h2 class="filter-block-title">Питание:</h2>
                 <input type="radio" name="power-type-item" id="battery-supply" value="battery supply" checked>
@@ -105,11 +105,11 @@
                 <input type="radio" name="power-type-item" id="mains-supply" value="mains supply">
                 <label for="mains-supply">Сетевые</label>
               </div>
-              <button type="submit" class="btn-filter">Показать</button>
+              <button class="btn-filter" type="submit">Показать</button>
             </form>
           </div>
-          <div class="products">
-            <div class="products-sorting">
+          <div class="products clearfix">
+            <div class="products-sorting clearfix">
                 <div class="sorting-title">Сотртировка:</div>
                 <div class="sorting-options">
                   <a class="option option-active" href="#">По цене</a>
@@ -230,7 +230,7 @@
 
     <footer class="page-footer">
       <div class="footer-top">
-        <div class="container">
+        <div class="container clearfix">
           <div class="footer-top-left">
             <a class="logo" href="index.html">Техномарт</a>
             <div class="footer-contacts">
@@ -256,7 +256,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <div class="container">
+        <div class="container clearfix">
           <div class="footer-copyright">
             <p>&copy; 2010-2016 Компания &laquo;Техномарт&raquo;</p>
             <p>Все права защищены</p>
