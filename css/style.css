@@ -37,7 +37,7 @@
   margin-right: 10px;
 }
 
-.user-block {
+.user-controls {
   float: right;
 }
 
@@ -65,7 +65,8 @@
   margin-right: 20px;
 }
 
-.user-block {
+.user-block,
+.user-block-active {
   float: right;
   width: 300px;
 }
@@ -79,22 +80,25 @@
 
 .promo-block {
   margin-top: 59px;
+  margin-bottom: 53px;
 }
 
 .promo {
   float: left;
   width: 300px;
   height: 123px;
+  margin-right: 20px;
   margin-bottom: 20px;
 }
 
+.promo:nth-child(3),
+.promo:nth-last-child(2),
 .promo:last-child {
-  margin-bottom: 0;
+  margin-right: 0;
 }
 
-.promo-materials,
-.promo-tools {
-    margin-right: 20px;
+ .promo:last-child {
+  margin-bottom: 0;
 }
 
 .slider-promo {
@@ -116,7 +120,7 @@
 /* Временная конструкция для лучшего визуального восприятия сетки */
 
 .popular-products {
-  margin-top: 53px;
+  margin-bottom: 21px;
 }
 
 .popular-products .title-block,
@@ -139,10 +143,6 @@
   margin-top: 20px;
 }
 
-.brands {
-  margin-top: 21px;
-}
-
 .products-list .products-item {
   float:left;
   width: 220px;
@@ -154,23 +154,24 @@
   margin-right: 0;
 }
 
+.brands {
+  margin-bottom: 65px;
+}
+
 .brands-list .brands-item {
   float: left;
   width: 220px;
   height: 145px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .brands-list .brands-item:nth-child(4n) {
   margin-right: 0;
 }
 
-.brands-list .brands-item:nth-child(-n+4) {
-  margin-bottom: 20px;
-}
-
 .services {
-  margin-top: 85px;
+  margin-bottom: 82px;
   padding-top: 68px;
   padding-bottom: 102px;
 }
@@ -204,7 +205,6 @@
 }
 
 .info {
-  margin-top: 82px;
   margin-bottom: 86px;
 }
 
@@ -228,11 +228,11 @@
 
 .page-title {
   min-height: 89px;
-  margin-top: 0;
+  margin: 0 0 20px 0;
 }
 
 .catalog {
-    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .catalog-filters {
@@ -321,7 +321,6 @@
 }
 
 .products-about {
-  margin-top: 60px;
   padding-top: 68px;
   padding-bottom: 39px;
 }
@@ -395,7 +394,6 @@ body > * > * > * > * > * {
   box-shadow: inset 0 0 0 2px rgb(116, 123, 32);
 
 }
-
 
 /*********** ВСПОМОГАТЕЛЬНЫЕ СТИЛИ ДЛЯ ПОДСВЕТКИ БЛОКОВ **********/
 
