@@ -1,3 +1,149 @@
+/***************************** ШРИФТЫ *****************************/
+/* cyrillic */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Cuprum'),
+    local('Cuprum-Regular'),
+    url("../fonts/cuprum.woff2") format('woff2'),
+    url("../fonts/cuprum.woff") format('woff');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Cuprum'),
+    local('Cuprum-Regular'),
+    url("../fonts/cuprum.woff2") format('woff2'),
+    url("../fonts/cuprum.woff") format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('Cuprum Bold'),
+    local('Cuprum-Bold'),
+    url("../fonts/cuprumbold.woff2") format('woff2'),
+    url("../fonts/cuprumbold.woff") format('woff');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('Cuprum Bold'),
+    local('Cuprum-Bold'),
+    url("../fonts/cuprumbold.woff2") format('woff2'),
+    url("../fonts/cuprumbold.woff") format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: italic;
+  font-weight: 400;
+  src:
+    local('Cuprum Italic'),
+    local('Cuprum-Italic'),
+    url("../fonts/cuprumitalic.woff2") format('woff2'),
+    url("../fonts/cuprumitalic.woff") format('woff');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: italic;
+  font-weight: 400;
+  src:
+    local('Cuprum Italic'),
+    local('Cuprum-Italic'),
+    url("../fonts/cuprumitalic.woff2") format('woff2'),
+    url("../fonts/cuprumitalic.woff") format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: italic;
+  font-weight: 700;
+  src:
+    local('Cuprum Bold Italic'),
+    local('Cuprum-BoldItalic'),
+    url("../fonts/cuprumbolditalic.woff2") format('woff2'),
+    url("../fonts/cuprumbolditalic.woff") format('woff');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: italic;
+  font-weight: 700;
+  src:
+    local('Cuprum Bold Italic'),
+    local('Cuprum-BoldItalic'),
+    url("../fonts/cuprumbolditalic.woff2") format('woff2'),
+    url("../fonts/cuprumbolditalic.woff") format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('PT Sans'),
+    local('PTSans-Regular'),
+    url(../fonts/ptsans.woff2) format('woff2'),
+    url(../fonts/ptsans.woff) format('woff');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('PT Sans'),
+    local('PTSans-Regular'),
+    url(../fonts/ptsans.woff2) format('woff2'),
+    url(../fonts/ptsans.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('PT Sans Bold'),
+    local('PTSans-Bold'),
+    url(../fonts/ptsansbold.woff2) format('woff2'),
+    url(../fonts/ptsansbold.woff) format('woff');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('PT Sans Bold'),
+    local('PTSans-Bold'),
+    url(../fonts/ptsansbold.woff2) format('woff2'),
+    url(../fonts/ptsansbold.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
 
 :root { /* Возвращает корневой элемент - html*/
   min-height: 2249px;
@@ -240,36 +386,45 @@
   width: 220px;
 }
 
+.filters-title {
+  min-height: 38px;
+}
+
+.price-block-title,
+ .filter-block-title {
+   margin: 0; /* Обнуление стандартных внешних отступов заголовка */
+   padding: 0;
+ }
+
 .price-block-title {
-  margin-top: 16px;
-  min-height: 16px;
+  padding-top: 16px;
+  padding-bottom: 23px;
 }
 
 .range-filter {
-  margin-top: 23px;
   min-height: 127px;
+  margin-bottom: 25px;
 }
 
 .filter-block-separator:first-of-type {
-  margin-top: 25px;
+  margin-bottom: 21px;
 }
 
 .filter-block-separator:first-of-type + .filter-block {
-  margin-top: 21px;
   min-height: 221px;
+  margin-bottom: 21px;
 }
 
 .filter-block-separator:last-of-type {
-  margin-top: 21px;
+  margin-bottom: 22px;
 }
 
 .filter-block-separator:last-of-type + .filter-block {
-  margin-top: 22px;
   min-height: 112px;
+  margin-bottom: 65px;
 }
 
 .btn-filter {
-  margin-top: 65px;
   width: 140px;
   height: 36px;
 }
@@ -394,6 +549,13 @@ body > * > * > * > * > * {
   box-shadow: inset 0 0 0 2px rgb(116, 123, 32);
 
 }
+
+body > * > * > * > * > * > * {
+  background: rgba(253, 174, 88, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(253, 174, 88);
+
+}
+
 
 /*********** ВСПОМОГАТЕЛЬНЫЕ СТИЛИ ДЛЯ ПОДСВЕТКИ БЛОКОВ **********/
 
