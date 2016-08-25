@@ -12,13 +12,13 @@
         <div class="container clearfix">
           <a class="logo">Техномарт</a>
           <form class="search" action="#" method="post">
-            <button class="btn-search" type="submit"></button>
             <input type="search" placeholder="Поиск:">
+            <button class="btn-search" type="submit">🔍</button>
           </form>
           <div class="user-controls clearfix">
-            <a class="bookmarks" href="#">Закладки: 0</a>
-            <a class="cart" href="#">Корзина: 0</a>
-            <a class="order" href="#">Оформить заказ</a>
+            <a class="user-controls-item bookmarks" href="#">Закладки: 0</a>
+            <a class="user-controls-item cart" href="#">Корзина: 0</a>
+            <a class="user-controls-item order" href="#">Оформить заказ</a>
           </div>
         </div>
       </div>
@@ -26,20 +26,20 @@
         <div class="container">
           <div class="header-bottom-wrapper clearfix">
             <p class="shop-description">
-              Интернет-магазин
-              строительных товаров
+              Интернет-магазин<br>
+              строительных материалов<br>
               и инструментов для ремонта
             </p>
             <div class="header-contacts">
-              <a href="tel:+78125550555">+7 (812)555-05-55</a>
+              <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
               <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
             </div>
-            <div class="user-block">
-              <a href="#">Войти</a>
-              <a href="#">Регистрация</a>
+            <div class="user-block clearfix">
+              <a class="user-block-btn" href="#">Войти</a>
+              <a class="user-block-btn" href="#">Регистрация</a>
             </div>
           </div>
-          <nav class="main-menu">
+          <nav class="main-menu clearfix">
             <a href="index.html">Главная</a>
             <a href="#">Компания</a>
             <a href="catalog.html">Каталог</a>
@@ -56,60 +56,60 @@
       <div class="container">
         <div class="promo-block clearfix">
           <div class="promo promo-materials flag-new">
-            <span>Материалы</span>
-            <a href="#">на любой вкус</a>
+            <span class="promo-title">Материалы</span>
+            <a class="btn btn-promo" href="#">на любой вкус</a>
           </div>
           <div class="promo promo-tools">
-            <span>Инструмент</span>
-            <a href="#">на все случаи</a>
+            <span class="promo-title">Инструмент</span>
+            <a class="btn btn-promo" href="#">на все случаи</a>
           </div>
           <div class="promo promo-technique">
-            <span>Техника</span>
-            <a href="#">для стройки</a>
+            <span class="promo-title">Техника</span>
+            <a class="btn btn-promo" href="#">для стройки</a>
           </div>
           <div class="slider-promo">
             <input type="radio" name="toogle" id="toogle-promo-1" checked>
             <input type="radio" name="toogle" id="toogle-promo-2">
-            <div class="slider-arrows">
+            <div class="slider-arrows clearfix">
               <div class="slider-arrows-1">
-                <label class="slider-arrow-disabled" for="toogle-promo-1"></label>
-                <label for="toogle-promo-2"></label>
+                <label class="slider-arrow-left disabled" for="toogle-promo-1">&lt;</label>
+                <label class="slider-arrow-right" for="toogle-promo-2">&gt;</label>
               </div>
               <div class="slider-arrows-2">
-                <label for="toogle-promo-1"></label>
-                <label class="slider-arrow-disabled" for="toogle-promo-2"></label>
+                <label class="slider-arrow-left" for="toogle-promo-1">&lt;</label>
+                <label class="slider-arrow-right disabled" for="toogle-promo-2">&gt;</label>
               </div>
             </div>
             <div class="slider-controls">
               <label for="toogle-promo-1"></label>
               <label for="toogle-promo-2"></label>
             </div>
-            <div class="slider-inner-promo">
+            <div class="slides-promo">
               <div class="slide-promo slide-promo-1">
-                <img src="img/slide-promo-1.jpg" width="620" height="266" alt="Перфораторы">
-                <div class="slider-text">
-                  <span class="slider-title">Перфораторы</span>
-                  <span class="slider-description">Настоящие мужские игрушки</span>
+                <!--<img src="img/slide-promo-1.jpg" width="620" height="266" alt="Перфораторы">-->
+                <div class="slide-text">
+                  <span class="slide-title">Перфораторы</span>
+                  <span class="slide-description">Настоящие мужские игрушки</span>
                 </div>
-                <a class="btn btn-catalog" href="#">Открыть каталог</a>
+                <a class="btn btn-catalog-promo" href="#">Открыть каталог</a>
               </div>
               <div class="slide-promo slide-promo-2">
-                <img src="img/slide-promo-2.jpg" width="620" height="266" alt="Дрели">
-                <div class="slider-text">
-                  <span class="slider-title">Дрели</span>
-                  <span class="slider-description">Соседям на радость!</span>
+                <!--<img src="img/slide-promo-2.jpg" width="620" height="266" alt="Дрели">-->
+                <div class="slide-text">
+                  <span class="slide-title">Дрели</span>
+                  <span class="slide-description">Соседям на радость!</span>
                 </div>
                 <a class="btn btn-catalog-promo" href="#">Открыть каталог</a>
               </div>
             </div>
           </div>
           <div class="promo promo-discounts">
-            <span>Скидки 50%</span>
-            <a href="#">на 350 товаров</a>
+            <span class="promo-title">Скидки 50%</span>
+            <a class="btn btn-promo" href="#">на 350 товаров</a>
           </div>
           <div class="promo promo-delivery">
-            <span>Доставка</span>
-            <a href="#">бесплатно</a>
+            <span class="promo-title">Доставка</span>
+            <a class="btn btn-promo" href="#">бесплатно</a>
           </div>
         </div>
         <section class="popular-products">
@@ -171,9 +171,9 @@
             </p>
           </div>
           <div class="slider-services clearfix">
-            <input type="radio" name="toogle" id="toogle-delivery" checked>
-            <input type="radio" name="toogle" id="toogle-guarantee">
-            <input type="radio" name="toogle" id="toogle-credit">
+            <input type="radio" name="toogle-service" id="toogle-delivery" checked>
+            <input type="radio" name="toogle-service" id="toogle-guarantee">
+            <input type="radio" name="toogle-service" id="toogle-credit">
             <div class="slider-menu">
               <label for="toogle-delivery">Доставка</label>
               <label for="toogle-guarantee">Гарантия</label>
