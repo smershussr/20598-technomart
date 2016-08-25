@@ -781,6 +781,14 @@ main {
   border-radius: 3px;
 }
 
+.btn-catalog-promo:hover {
+  background-color: #ca2c37;
+}
+
+.btn-catalog-promo:active {
+  background-color: #ba2732;
+}
+
 .slide-promo:nth-child(1) {
   background-image: url("../img/slide-promo-1.jpg");
 }
@@ -931,6 +939,10 @@ main {
   margin-right: 0;
 }
 
+.products-item:hover {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
 .products-item .actions {
   position: absolute;
   top: 0;
@@ -959,6 +971,15 @@ main {
   box-shadow: inset 0 -3px 0 0 #367315;
 }
 
+.actions .btn-buy:hover {
+  background-color: #5fbb2d;
+}
+
+.actions .btn-buy:active {
+  background-color: #518534;
+  box-shadow: none;
+}
+
 .actions .btn-buy::before {
   content: "\62";
   position: absolute;
@@ -969,12 +990,28 @@ main {
   opacity: 0.3;
 }
 
+.actions .btn-buy:hover::before {
+  opacity: 1;
+}
+
+.actions .btn-buy:active::before {
+  opacity: 1;
+}
+
 .actions .btn-bookmark {
   width: 135px;
   padding: 7px 0;
   color: #32425c;
   background-color: #ffffff;
   border: 3px solid #63a63e;
+}
+
+.actions .btn-bookmark:hover {
+  border-color: #32425c;
+}
+
+.actions .btn-bookmark:active {
+  opacity: 0.3;
 }
 
 .products-item:hover .actions {
@@ -1031,10 +1068,11 @@ main {
 
 .brands-list .brands-item {
   float: left;
-  width: 220px;
-  height: 145px;
+  width: 218px;
+  height: 143px;
   margin-right: 20px;
   margin-bottom: 20px;
+  border: 1px solid #e4e4e4;
 }
 
 .brands-list .brands-item:nth-child(4n) {
