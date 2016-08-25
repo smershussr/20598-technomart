@@ -1,162 +1,200 @@
 /***************************** ШРИФТЫ *****************************/
 /* cyrillic */
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   src:
-    local('Cuprum'),
-    local('Cuprum-Regular'),
-    url("../fonts/cuprum.woff2") format('woff2'),
-    url("../fonts/cuprum.woff") format('woff');
+    local("Cuprum"),
+    local("Cuprum-Regular"),
+    url("../fonts/cuprum.woff2") format("woff2"),
+    url("../fonts/cuprum.woff") format("woff");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* latin */
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   src:
-    local('Cuprum'),
-    local('Cuprum-Regular'),
-    url("../fonts/cuprum.woff2") format('woff2'),
-    url("../fonts/cuprum.woff") format('woff');
+    local("Cuprum"),
+    local("Cuprum-Regular"),
+    url("../fonts/cuprum.woff2") format("woff2"),
+    url("../fonts/cuprum.woff") format("woff");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* cyrillic */
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   src:
-    local('Cuprum Bold'),
-    local('Cuprum-Bold'),
-    url("../fonts/cuprumbold.woff2") format('woff2'),
-    url("../fonts/cuprumbold.woff") format('woff');
+    local("Cuprum Bold"),
+    local("Cuprum-Bold"),
+    url("../fonts/cuprumbold.woff2") format("woff2"),
+    url("../fonts/cuprumbold.woff") format("woff");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* latin */
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   src:
-    local('Cuprum Bold'),
-    local('Cuprum-Bold'),
-    url("../fonts/cuprumbold.woff2") format('woff2'),
-    url("../fonts/cuprumbold.woff") format('woff');
+    local("Cuprum Bold"),
+    local("Cuprum-Bold"),
+    url("../fonts/cuprumbold.woff2") format("woff2"),
+    url("../fonts/cuprumbold.woff") format("woff");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* cyrillic */
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: italic;
-  font-weight: 400;
+  font-weight: normal;
   src:
-    local('Cuprum Italic'),
-    local('Cuprum-Italic'),
-    url("../fonts/cuprumitalic.woff2") format('woff2'),
-    url("../fonts/cuprumitalic.woff") format('woff');
+    local("Cuprum Italic"),
+    local("Cuprum-Italic"),
+    url("../fonts/cuprumitalic.woff2") format("woff2"),
+    url("../fonts/cuprumitalic.woff") format("woff");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* latin */
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: italic;
-  font-weight: 400;
+  font-weight: normal;
   src:
-    local('Cuprum Italic'),
-    local('Cuprum-Italic'),
-    url("../fonts/cuprumitalic.woff2") format('woff2'),
-    url("../fonts/cuprumitalic.woff") format('woff');
+    local("Cuprum Italic"),
+    local("Cuprum-Italic"),
+    url("../fonts/cuprumitalic.woff2") format("woff2"),
+    url("../fonts/cuprumitalic.woff") format("woff");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* cyrillic */
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: italic;
-  font-weight: 700;
+  font-weight: bold;
   src:
-    local('Cuprum Bold Italic'),
-    local('Cuprum-BoldItalic'),
-    url("../fonts/cuprumbolditalic.woff2") format('woff2'),
-    url("../fonts/cuprumbolditalic.woff") format('woff');
+    local("Cuprum Bold Italic"),
+    local("Cuprum-BoldItalic"),
+    url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+    url("../fonts/cuprumbolditalic.woff") format("woff");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* latin */
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: italic;
-  font-weight: 700;
+  font-weight: bold;
   src:
-    local('Cuprum Bold Italic'),
-    local('Cuprum-BoldItalic'),
-    url("../fonts/cuprumbolditalic.woff2") format('woff2'),
-    url("../fonts/cuprumbolditalic.woff") format('woff');
+    local("Cuprum Bold Italic"),
+    local("Cuprum-BoldItalic"),
+    url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+    url("../fonts/cuprumbolditalic.woff") format("woff");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* cyrillic */
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   src:
-    local('PT Sans'),
-    local('PTSans-Regular'),
-    url(../fonts/ptsans.woff2) format('woff2'),
-    url(../fonts/ptsans.woff) format('woff');
+    local("PT Sans"),
+    local("PTSans-Regular"),
+    url(../fonts/ptsans.woff2) format("woff2"),
+    url(../fonts/ptsans.woff) format("woff");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* latin */
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   src:
-    local('PT Sans'),
-    local('PTSans-Regular'),
-    url(../fonts/ptsans.woff2) format('woff2'),
-    url(../fonts/ptsans.woff) format('woff');
+    local("PT Sans"),
+    local("PTSans-Regular"),
+    url(../fonts/ptsans.woff2) format("woff2"),
+    url(../fonts/ptsans.woff) format("woff");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* cyrillic */
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   src:
-    local('PT Sans Bold'),
-    local('PTSans-Bold'),
-    url(../fonts/ptsansbold.woff2) format('woff2'),
-    url(../fonts/ptsansbold.woff) format('woff');
+    local("PT Sans Bold"),
+    local("PTSans-Bold"),
+    url(../fonts/ptsansbold.woff2) format("woff2"),
+    url(../fonts/ptsansbold.woff) format("woff");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* latin */
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   src:
-    local('PT Sans Bold'),
-    local('PTSans-Bold'),
-    url(../fonts/ptsansbold.woff2) format('woff2'),
-    url(../fonts/ptsansbold.woff) format('woff');
+    local("PT Sans Bold"),
+    local("PTSans-Bold"),
+    url(../fonts/ptsansbold.woff2) format("woff2"),
+    url(../fonts/ptsansbold.woff) format("woff");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
+/***************************** ИКОНОЧНЫЙ ШРИФТ *****************************/
+
+@font-face {
+  font-family: "symbols-technomart";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url("../fonts/symbols-technomart.woff2") format("woff2"),
+    url("../fonts/symbols-technomart.woff") format("woff");
+}
+
+.btn-search,
+.bookmarks::before,
+.cart::before,
+.phone::before,
+.user-block-btn::before,
+.slider-arrow-left,
+.slider-arrow-right {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-technomart";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+
+  line-height: 18px;
+}
+
+/***************************** СТИЛИ СТРАНИЦ *****************************/
 
 :root { /* Возвращает корневой элемент - html*/
-  min-height: 2249px;
+  min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
-  font-weight: normal;
   font-size: 13px;
   line-height: 24px;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
+  font-weight: normal;
   color: #000000;
+  background-color: #ffffff;
 }
 
-/***************************** СЕТКИ СТРАНИЦ *****************************/
 .clearfix::after {
   content: "";
   display: table;
@@ -169,35 +207,200 @@
   padding: 0 10px;
 }
 
-.header-top .logo {
-  float: left;
-  width: 220px;
-  height: 42px;
-  margin-right: 10px;
+/***************************** ХЕДЕР *****************************/
+/******* ВЕРХ *******/
+
+.header-top {
+  background-color: #293449;
 }
 
-.search {
+.header-top .logo {
   float: left;
-  width: 250px;
-  height: 42px;
-  margin-right: 10px;
+  max-width: 220px;
+  padding: 9px 55px;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
+  cursor: pointer;
 }
+
+.header-top .logo:hover {
+  background-color: #ca2c37;
+  box-shadow: 0 5px 0 0 #9a212a;
+}
+
+.header-top .logo:active {
+  background-color: #ba2732;
+  box-shadow: 0 5px 0 0 #8e1e26;
+}
+
+form.search {
+  position: relative;
+  float: left;
+  max-width: 270px;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-search {
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  font-size: 17px;
+  color: #ffffff;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+input[type="search"]:hover + .btn-search,
+.btn-search:hover {
+  opacity: 1;
+}
+
+.btn-search:active {
+  opacity: 0.3;
+}
+
+input[type="search"] {
+  width: 270px;
+  height: 42px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  font-size: 17px;
+  line-height: 42px;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
+  font-weight: normal;
+  color: #ffffff;
+  background-color: #293449;
+  border: none;
+}
+
+input[type="search"]::-webkit-input-placeholder { color:#ffffff; }
+input[type="search"]::-moz-placeholder          { color:#ffffff; } /* Firefox 19+ */
+input[type="search"]:-moz-placeholder           { color:#ffffff; } /* Firefox 18- */
+input[type="search"]:-ms-input-placeholder      { color:#ffffff; }
+
+input[type="search"]:hover,
+.bookmarks:hover,
+.cart:hover {
+  background-color: #212a3a;
+}
+
+input[type="search"] + .btn-search:active {
+  background-color: #293449;
+}
+
+input[type="search"]:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+input[type="search"]:focus + .btn-search {
+  color: #ee3643;
+  opacity: 1;
+}
+
+input[type="search"]:focus::-webkit-input-placeholder { color: transparent; }
+input[type="search"]:focus::-moz-placeholder          { color: transparent; } /* Firefox 19+ */
+input[type="search"]:focus:-moz-placeholder           { color: transparent; } /* Firefox 18- */
+input[type="search"]:focus:-ms-input-placeholder      { color: transparent; }
 
 .user-controls {
   float: right;
+  max-width: 450px;
 }
 
 .bookmarks,
 .cart,
 .order {
+  position: relative;
   float: left;
-  width: 150px;
-  height: 42px;
+  max-width: 150px;
+  padding: 12px;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: left;
+  text-decoration: none;
+  color: #ffffff;
 }
+
+.bookmarks {
+  min-width: 96px;
+  padding-left: 44px;
+  padding-right: 10px;
+}
+
+.bookmarks::before {
+  content: "🔖";
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  font-size: 17px;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.cart {
+  min-width: 90px;
+  padding-left: 50px;
+  padding-right: 10px;
+}
+
+.cart::before {
+  content: "\62";
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  font-size: 17px;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.bookmarks:hover::before,
+.cart:hover::before {
+  opacity: 1;
+}
+
+.bookmarks:active,
+.cart:active {
+  background-color: #161d29;
+}
+
+.bookmarks:active::before,
+.cart:active::before {
+  opacity: 0.5;
+}
+
+.cart-full {
+  background-color: #ee3643;
+}
+
+.order {
+  padding: 12px 21px;
+  background-color: #63a63e;
+}
+
+.order:hover {
+  background-color: #5fbb2d;
+}
+
+.order:active {
+  background-color: #518534;
+}
+
+/******* НИЗ *******/
 
 .header-bottom {
   padding-top: 46px;
-  padding-bottom: 60px;
+  padding-bottom: 65px;
+  background-color: #f1f5f7;
 }
 
 .header-bottom-wrapper {
@@ -211,15 +414,213 @@
   margin-right: 20px;
 }
 
+.shop-description {
+  box-sizing: border-box;
+  min-height: 60px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  padding-left: 52px;
+  padding-right: 51px;
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.header-contacts .phone {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  max-width: 270px;
+  margin-bottom: 5px;
+  padding: 10px 50px 9px 70px;
+  font-size: 21px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #e9292a;
+  border: 3px solid #ffffff;
+  cursor: default;
+}
+
+.header-contacts .phone::before {
+  content: "📞";
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  font-size: 22px;
+  color: #b7bfc8;
+}
+
+.header-contacts span {
+  display: block;
+  max-width: 270px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #32425c;
+}
+
 .user-block,
 .user-block-active {
   float: right;
   width: 300px;
+  font-size: 0;
+  text-align: right;
+}
+
+.user-block .user-block-btn {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 13px 24px;
+  font-size: 21px;
+  line-height: 18px;
+  vertical-align: top;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.user-block .user-block-btn:hover {
+  color: #ee3643;
+}
+
+.user-block .user-block-btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-block .user-block-btn:first-child {
+  position: relative;
+  padding-left: 49px;
+  padding-right: 25px;
+}
+
+.user-block .user-block-btn:last-child {
+  margin-right: 0;
+}
+
+.user-block .user-block-btn:first-child::before {
+  content: "\2386";
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  font-size: 22px;
+  color: #c5c5c5;
+}
+
+.user-block .user-block-btn:hover::before {
+  color: #32425c;
+}
+
+.user-block .user-block-btn:active::before {
+  color: #c5c5c5;
+}
+
+.user-block-active a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.user-block-active .user-block-btn {
+  padding: 13px 0;
+  font-size: 21px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.user-block-active .user-block-btn:first-child {
+  padding-left: 46px;
+  padding-right: 27px;
+}
+
+.user-block-active .user-block-btn:first-child::before {
+  content: "👨";
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  font-size: 18px;
+  color: #c5c5c5;
+}
+
+.user-block-active .user-block-btn:nth-child(2) {
+  padding-left: 41px;
+  font-size: 0;
+}
+
+.user-block-active .user-block-btn:nth-child(2)::before {
+  content: "\241b";
+  position: absolute;
+  top: 13px;
+  left: 7px;
+  font-size: 22px;
+  color: #c5c5c5;
+}
+
+.user-block-active .user-block-btn:hover::before {
+  color: #32425c;
+}
+
+.user-block-active .user-block-btn:active::before {
+  color: #c5c5c5;
+}
+
+.user-block-active .user-block-link {
+  padding: 8px 11px 2px 20px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+}
+
+.user-block-active .user-block-link:last-child {
+  margin-right: 60px;
+}
+
+.user-block-active .user-block-link:last-child::before {
+    content: " ";
+    position: absolute;
+    left: 3px;
+    top: 14px;
+    width: 4px;
+    height: 4px;
+    background-color: #32425c;
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+.user-block-active .user-block-link:hover {
+  color: #ee3643;
+}
+
+.user-block-active .user-block-btn:active,
+.user-block-active .user-block-link:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-menu {
-  height: 56px;
-  margin-top: 40px;
+  padding: 0 23px;
+  background-color: #32425c;
+  box-shadow: 0 5px 0 0 #293449;
+}
+
+.main-menu a {
+  float: left;
+  padding: 19px 30px;
+  font-size: 17px;
+  line-height: 17px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-menu a:hover {
+  background-color: #293449;
+}
+
+.main-menu a:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #1d2739;
+  box-shadow: 0 5px 0 0 #1d2739;
 }
 
 /********* ГЛАВНАЯ *********/
@@ -230,11 +631,17 @@
 }
 
 .promo {
+  position: relative;
   float: left;
+  box-sizing: border-box;
   width: 300px;
   height: 123px;
   margin-right: 20px;
   margin-bottom: 20px;
+  padding: 23px 119px 26px 23px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .promo:nth-child(3),
@@ -247,6 +654,81 @@
   margin-bottom: 0;
 }
 
+.flag-new::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -21px;
+  box-sizing: border-box;
+  width: 84px;
+  height: 28px;
+  text-align: center;
+  background: #ee3643 url("../img/flag-new.svg") no-repeat 50% 50%;
+  transform: rotate(45deg);
+}
+
+.promo-title {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 38px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  vertical-align: top;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.btn-promo {
+  width: 135px;
+  margin-left: 2px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn-promo:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-promo:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.promo-materials {
+  background-color: #f6b22d;
+  background-position: 185px 0;
+}
+
+.promo-tools {
+  background-color: #4aafde;
+  background-position: 185px -133px;
+}
+
+.promo-technique {
+  background-color: #cc79d1;
+  background-position: 185px -266px;
+}
+
+.promo-discounts {
+  background-color: #85d179;
+  background-position: 185px -399px;
+}
+
+.promo-delivery {
+  background-color: #f6b22d;
+  background-position: 185px -532px;
+}
+
 .slider-promo {
   position: relative;
   float: left;
@@ -255,15 +737,141 @@
   margin-right: 20px;
 }
 
-/* Временная конструкция для лучшего визуального восприятия сетки */
-.slider-promo input[type="radio"],
-.slider-promo .slider-arrows,
-.slider-promo .slider-controls,
-.slider-promo .slide-promo,
-.slider-promo .slider-text {
-  position: absolute;
+.slide-promo {
+  display: none;
+  min-height: 265px;
+  padding: 0 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-/* Временная конструкция для лучшего визуального восприятия сетки */
+
+.slide-text {
+  max-width: 300px;
+  padding: 21px 0 18px;
+}
+
+.slide-title {
+  display: block;
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.slide-description {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  color: #ffffff;
+}
+
+.btn-catalog-promo {
+  display: block;
+  width: 195px;
+  margin-top: 100px;
+  background-color: #ee3643;
+  border-radius: 3px;
+}
+
+.slide-promo-1 {
+  background-image: url("../img/slide-promo-1.jpg");
+}
+
+.slide-promo-2 {
+  background-image: url("../img/slide-promo-2.jpg");
+}
+
+.slider-promo input[type="radio"] {
+  display: none;
+  margin: 0;
+  padding: 0;
+  border:none;
+  outline: none;
+}
+
+.slider-arrows {
+  position: absolute;
+  top: 116px;
+  width: 100%;
+}
+
+.slider-arrows .slider-arrow-left {
+  float: left;
+}
+
+.slider-arrows .slider-arrow-right {
+  float: right;
+}
+
+.slider-arrows .slider-arrow-left,
+.slider-arrows .slider-arrow-right {
+  height: 40px;
+  font-size: 45px;
+  line-height: 40px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.slider-arrow-left.disabled,
+.slider-arrow-right.disabled {
+  cursor: default;
+}
+
+.slider-arrows .slider-arrows-1,
+.slider-arrows .slider-arrows-2 {
+  display: none;
+}
+
+#toogle-promo-1:checked ~ .slider-arrows .slider-arrows-1 {
+  display: block;
+}
+
+#toogle-promo-2:checked ~ .slider-arrows .slider-arrows-2 {
+  display: block;
+}
+
+.slider-controls {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 32px;
+  width: 160px;
+  height: 10px;
+  margin-left: -80px;
+  text-align: center;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 3px;
+  vertical-align: top;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label:last-child {
+  margin-right: 0;
+}
+
+#toogle-promo-1:checked ~ .slides-promo .slide-promo-1 {
+  display: block;
+}
+
+#toogle-promo-2:checked ~ .slides-promo .slide-promo-2 {
+  display: block;
+}
+
+#toogle-promo-1:checked ~ .slider-controls label[for="toogle-promo-1"],
+#toogle-promo-2:checked ~ .slider-controls label[for="toogle-promo-2"] {
+  background-color: #ee3643;
+}
+
 
 .popular-products {
   margin-bottom: 21px;
@@ -458,13 +1066,14 @@
 
 .products .products-item {
     float: left;
-    width: 220px;
+    width: 218px;
     min-height: 318px;
     margin-right: 20px;
     margin-bottom: 20px;
+    border: 1px solid #c5c5c5;
 }
 
-.products .products-item:nth-of-type(3n) {
+.products .products-item:nth-of-type(3n+3) {
     margin-right: 0;
 }
 
@@ -522,7 +1131,7 @@
 /***************************** СЕТКИ СТРАНИЦ *****************************/
 
 /*********** ВСПОМОГАТЕЛЬНЫЕ СТИЛИ ДЛЯ ПОДСВЕТКИ БЛОКОВ **********/
-body > * {
+/*body > * {
   background: rgba(0, 128, 0, 0.2);
   box-shadow: 0 0 0 3px green;
 }
