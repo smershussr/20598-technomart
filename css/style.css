@@ -160,8 +160,7 @@
 .cart::before,
 .phone::before,
 .user-block-btn::before,
-.slider-arrow-left,
-.slider-arrow-right {
+.slider-arrow {
   display: inline-block;
   width: 1em;
   margin-right: 0.2em;
@@ -775,11 +774,11 @@ input[type="search"]:focus:-ms-input-placeholder      { color: transparent; }
   border-radius: 3px;
 }
 
-.slide-promo-1 {
+.slide-promo:nth-child(1) {
   background-image: url("../img/slide-promo-1.jpg");
 }
 
-.slide-promo-2 {
+.slide-promo:nth-child(2) {
   background-image: url("../img/slide-promo-2.jpg");
 }
 
@@ -797,16 +796,15 @@ input[type="search"]:focus:-ms-input-placeholder      { color: transparent; }
   width: 100%;
 }
 
-.slider-arrows .slider-arrow-left {
+.slider-arrows .arrow-left {
   float: left;
 }
 
-.slider-arrows .slider-arrow-right {
+.slider-arrows .arrow-right {
   float: right;
 }
 
-.slider-arrows .slider-arrow-left,
-.slider-arrows .slider-arrow-right {
+.slider-arrows .slider-arrow {
   height: 40px;
   font-size: 45px;
   line-height: 40px;
@@ -814,21 +812,20 @@ input[type="search"]:focus:-ms-input-placeholder      { color: transparent; }
   cursor: pointer;
 }
 
-.slider-arrow-left.disabled,
-.slider-arrow-right.disabled {
+.slider-arrows-item:first-child .arrow-left,
+.slider-arrows-item:last-child .arrow-right {
   cursor: default;
 }
 
-.slider-arrows .slider-arrows-1,
-.slider-arrows .slider-arrows-2 {
+.slider-arrows .slider-arrows-item {
   display: none;
 }
 
-#toogle-promo-1:checked ~ .slider-arrows .slider-arrows-1 {
+#toogle-promo-1:checked ~ .slider-arrows .slider-arrows-item:nth-child(1) {
   display: block;
 }
 
-#toogle-promo-2:checked ~ .slider-arrows .slider-arrows-2 {
+#toogle-promo-2:checked ~ .slider-arrows .slider-arrows-item:nth-child(2) {
   display: block;
 }
 
@@ -859,11 +856,11 @@ input[type="search"]:focus:-ms-input-placeholder      { color: transparent; }
   margin-right: 0;
 }
 
-#toogle-promo-1:checked ~ .slides-promo .slide-promo-1 {
+#toogle-promo-1:checked ~ .slides-promo .slide-promo:nth-child(1) {
   display: block;
 }
 
-#toogle-promo-2:checked ~ .slides-promo .slide-promo-2 {
+#toogle-promo-2:checked ~ .slides-promo .slide-promo:nth-child(2) {
   display: block;
 }
 
