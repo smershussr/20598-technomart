@@ -160,24 +160,22 @@
 .cart::before,
 .phone::before,
 .user-block-btn::before,
-.slider-arrow {
+.slider-arrow,
+.btn-buy::before {
   display: inline-block;
   width: 1em;
   margin-right: 0.2em;
   margin-left: 0.2em;
-
   font-weight: normal;
-  line-height: 1em;
+  font-style: normal;
+  line-height: 18px;
   font-family: "symbols-technomart";
   text-align: center;
+  vertical-align: top;
   text-transform: none;
   text-decoration: inherit;
-  font-style: normal;
   font-variant: normal;
-
   speak: none;
-
-  line-height: 18px;
 }
 
 /***************************** СТИЛИ СТРАНИЦ *****************************/
@@ -194,6 +192,11 @@
   background-color: #ffffff;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -204,6 +207,21 @@
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 38px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  vertical-align: top;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /***************************** ХЕДЕР *****************************/
@@ -624,8 +642,11 @@ input[type="search"]:focus:-ms-input-placeholder      { color: transparent; }
 
 /********* ГЛАВНАЯ *********/
 
+main {
+  padding-top: 59px;
+}
+
 .promo-block {
-  margin-top: 59px;
   margin-bottom: 53px;
 }
 
@@ -656,8 +677,8 @@ input[type="search"]:focus:-ms-input-placeholder      { color: transparent; }
 .flag-new::after {
   content: "";
   position: absolute;
-  top: 8px;
-  right: -21px;
+  top: 6px;
+  right: -22px;
   box-sizing: border-box;
   width: 84px;
   height: 28px;
@@ -672,20 +693,6 @@ input[type="search"]:focus:-ms-input-placeholder      { color: transparent; }
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
-  color: #ffffff;
-}
-
-.btn {
-  display: inline-block;
-  box-sizing: border-box;
-  height: 38px;
-  padding: 10px;
-  font-size: 14px;
-  line-height: 18px;
-  vertical-align: top;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
   color: #ffffff;
 }
 
@@ -869,14 +876,15 @@ input[type="search"]:focus:-ms-input-placeholder      { color: transparent; }
   background-color: #ee3643;
 }
 
-
 .popular-products {
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 .popular-products .title-block,
 .brands .title-block {
-  min-height: 89px;
+  margin-bottom: 22px;
+  padding: 29px 25px 29px 29px;
+  background-color: #f7f3ec;
 }
 
 .popular-products .section-title,
@@ -889,20 +897,132 @@ input[type="search"]:focus:-ms-input-placeholder      { color: transparent; }
   float: right;
 }
 
-.products-list,
-.brands-list {
-  margin-top: 20px;
+.section-title,
+.page-title {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #32425c;
 }
 
-.products-list .products-item {
-  float:left;
-  width: 220px;
-  min-height: 318px;
+.popular-products .btn-catalog-popular,
+.brands .btn-catalog-brands {
+  display: block;
+  width: 252px;
+  background-color: #ee3643;
+  border-radius: 3px;
+}
+
+.products-item {
+  position: relative;
+  float: left;
+  width: 218px;
   margin-right: 20px;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
 }
 
-.products-list .products-item:last-child {
+.products-item:last-child {
   margin-right: 0;
+}
+
+.products-item .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
+  background-color: #ffffff;
+}
+
+.actions .btn-buy,
+.actions .btn-bookmark {
+  display: block;
+  width: 135px;
+  margin: 0 auto 7px;
+  padding: 10px 0;
+  font-size: 14px;
+  background-color: #63a63e;
+  border-radius: 3px;
+}
+
+.actions .btn-buy {
+  position: relative;
+  box-shadow: inset 0 -3px 0 0 #367315;
+}
+
+.actions .btn-buy::before {
+  content: "\62";
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  font-size: 17px;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.actions .btn-bookmark {
+  width: 135px;
+  padding: 7px 0;
+  color: #32425c;
+  background-color: #ffffff;
+  border: 3px solid #63a63e;
+}
+
+.products-item:hover .actions {
+  display: block;
+}
+
+.products-item img {
+  width: 218px;
+  height: 168px;
+  overflow: hidden;
+}
+
+.products-item .title {
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 0 25px;
+}
+
+.products-item .price-old {
+  min-height: 20px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  text-decoration: line-through;
+  color: #999999;
+}
+
+.products-item .price {
+  position: relative;
+  width: 80px;
+  margin: 0 auto 20px;
+  padding: 8px 30px;
+  font-size: 17px;
+  color: #ffffff;
+  background-color: #ee3643;
+  border-radius: 3px;
+}
+
+.products-item .price::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: 20px solid #ffffff;
+  border-left-color: #ee3643;
 }
 
 .brands {
@@ -1055,12 +1175,6 @@ input[type="search"]:focus:-ms-input-placeholder      { color: transparent; }
   min-height: 38px;
 }
 
-/****** ПОКА СКРОЕМ ДЕЙСТВИЯ *****/
-.actions {
-  display: none;
-}
-/****** ПОКА СКРОЕМ ДЕЙСТВИЯ *****/
-
 .products .products-item {
     float: left;
     width: 218px;
@@ -1127,61 +1241,11 @@ input[type="search"]:focus:-ms-input-placeholder      { color: transparent; }
 
 /***************************** СЕТКИ СТРАНИЦ *****************************/
 
-/*********** ВСПОМОГАТЕЛЬНЫЕ СТИЛИ ДЛЯ ПОДСВЕТКИ БЛОКОВ **********/
-/*body > * {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-}
-
-body > * > * {
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
-}
-
-body > * > * > * {
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-
-}
-
-body > * > * > * > * {
-  background: rgba(12, 84, 200, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(12, 84, 200);
-
-}
-
-body > * > * > * > * > * {
-  background: rgba(116, 123, 32, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(116, 123, 32);
-
-}
-
-body > * > * > * > * > * > * {
-  background: rgba(253, 174, 88, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(253, 174, 88);
-
-}
-
-
-/*********** ВСПОМОГАТЕЛЬНЫЕ СТИЛИ ДЛЯ ПОДСВЕТКИ БЛОКОВ **********/
-
 /***************************** ЗАГОЛОВКИ *****************************/
+/*
 
-.slider-promo .slider-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
 
-.section-title,
-.page-title {
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #32425c;
-}
+
 
 .products-item .title {
   font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
@@ -1224,6 +1288,6 @@ body > * > * > * > * > * > * {
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
-}
+}*/
 
 /***************************** ЗАГОЛОВКИ *****************************/
