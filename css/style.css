@@ -156,12 +156,16 @@
 }
 
 .btn-search,
+.btn-search::before,
 .bookmarks::before,
 .cart::before,
 .phone::before,
 .user-block-btn::before,
 .slider-arrow,
-.btn-buy::before {
+.btn-buy::before,
+.btn-social-vk::before,
+.btn-social-fb::before,
+.btn-social-inst::before {
   display: inline-block;
   width: 1em;
   margin-right: 0.2em;
@@ -233,10 +237,11 @@ img {
 
 .header-top .logo {
   float: left;
-  max-width: 220px;
-  padding: 9px 55px;
+  width: 200px;
+  padding: 9px 10px;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
@@ -267,6 +272,7 @@ form.search {
   position: absolute;
   top: 11px;
   left: 9px;
+  padding: 0;
   font-size: 17px;
   color: #ffffff;
   background: none;
@@ -275,6 +281,10 @@ form.search {
   cursor: pointer;
   opacity: 0.3;
 }
+
+.btn-search::before {
+  content: "🔍";
+} /* "\1f50d" */
 
 input[type="search"]:hover + .btn-search,
 .btn-search:hover {
@@ -815,8 +825,16 @@ main {
   float: left;
 }
 
+.slider-arrows .arrow-left::before {
+  content: "\3c"; /* "&lt;" */
+}
+
 .slider-arrows .arrow-right {
   float: right;
+}
+
+.slider-arrows .arrow-right::before {
+   content: "\3e"; /* "&gt;" */
 }
 
 .slider-arrows .slider-arrow {
@@ -1405,73 +1423,179 @@ margin-bottom: 70px;
 
 .footer-top-left {
   float: left;
-  width: 340px;
-  min-height: 193px;
+  max-width: 330px;
+}
+
+.page-footer .logo {
+  display: block;
+  width: 200px;
+  margin-bottom: 35px;
+  padding: 16px 10px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
+  cursor: pointer;
+}
+
+.footer-contacts {
+  margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+}
+
+.footer-contacts .address {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.footer-contacts .phone {
+  display: block;
+  box-sizing: border-box;
+  font-size: 21px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #f1f5f7;
+  cursor: default;
 }
 
 .footer-top-right {
   float: right;
-  width: 550px;
-  min-height: 193px;
+  max-width: 600px;
+}
+
+.footer-menu,
+.footer-catalog {
+  font-size: 0;
+  text-align: right;
+}
+
+.footer-catalog {
+  margin-bottom: 70px;
+}
+
+.footer-menu a,
+.footer-catalog a {
+  display: inline-block;
+  padding: 38px 0 0 60px;
+  font-size: 18px;
+  line-height: 24px;
+  vertical-align:top;
+  text-decoration: none;
+  color: #f1f5f7;
+}
+
+.footer-menu a:first-child {
+  padding-left: 0;
+}
+
+.footer-menu a:last-child {
+  padding-right: 0;
+}
+
+.footer-catalog a {
+  color: #ffd180;
+}
+
+.footer-menu a:hover,
+.footer-catalog a:hover {
+  text-decoration: underline;
+}
+
+.footer-menu a:active,
+.footer-catalog a:active {
+  text-decoration: none;
+  opacity: 0.5;
 }
 
 .footer-bottom {
+  padding: 38px 0;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
   background-color: #293449;
 }
 
 .footer-copyright {
   float: left;
   width: 230px;
-  min-height: 108px;
   margin-right: 160px;
 }
 
 .footer-socials {
   float: left;
   width: 170px;
-  min-height: 108px;
   margin-right: 80px;
 }
+
+.footer-socials .btn {
+  width: 40px;
+  margin-right: -3px;
+  padding: 10px 0;
+  font-size: 18px;
+  line-height: 10,56px;
+  text-align: center;
+  background-color: #212a3a;
+  border-radius: 50%
+}
+
+.footer-socials .btn:hover,
+.footer-socials .btn:active {
+  background-color: #ee3643;
+}
+
+.btn-social-vk::before {
+  content: "\76";
+} /* "v" */
+
+.btn-social-fb::before {
+  content: "\66";
+} /* "f" */
+
+.btn-social-inst::before {
+  content: "📷";
+  } /* "\1f4f7" */
 
 .footer-feedback {
   float: left;
   width: 140px;
-  min-height: 108px;
 }
 
 .footer-developers {
   float: right;
-  width: 140px;
-  min-height: 108px;
+  width: 110px;
+}
+
+.footer-bottom p,
+.footer-bottom .link {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-bottom .link {
+  display: block;
+  text-decoration: none;
+  color: #ffd180;
+}
+
+.footer-bottom .link:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom .link:active {
+  text-decoration: none;
+  color: #ee3643;
 }
 
 /***************************** СЕТКИ СТРАНИЦ *****************************/
 
 /***************************** ЗАГОЛОВКИ *****************************/
 /*
-
-
-
-
-.products-item .title {
-  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20px;
-}
-
-
-
-.info-left .info-title {
-  line-height: normal;
-}
-
-.slider-services .slide-title {
-  font-size: 36px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #32425c;
-}
 
 .filters-title,
 .sorting-title {
