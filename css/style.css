@@ -676,7 +676,7 @@ main.page-catalog {
   height: 123px;
   margin-right: 20px;
   margin-bottom: 20px;
-  padding: 20px 119px 29px 23px;
+  padding: 21px 22px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   overflow: hidden;
@@ -696,10 +696,11 @@ main.page-catalog {
   content: "";
   position: absolute;
   top: 6px;
-  right: -22px;
+  right: -21px;
+  z-index: 10;
   box-sizing: border-box;
   width: 84px;
-  height: 28px;
+  height: 27px;
   text-align: center;
   background: #ee3643 url("../img/flag-new.svg") no-repeat 50% 50%;
   transform: rotate(45deg);
@@ -707,7 +708,7 @@ main.page-catalog {
 
 .promo-title {
   display: block;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -716,8 +717,14 @@ main.page-catalog {
 
 .btn-promo {
   width: 135px;
-  margin-left: 2px;
+  margin-left: 3px;
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.promo:nth-child(3) .btn-promo,
+.promo:nth-last-child(2) .btn-promo,
+.promo:last-child .btn-promo {
+  margin-left: 1px;
 }
 
 .btn-promo:hover {
@@ -730,54 +737,55 @@ main.page-catalog {
 
 .promo-materials {
   background-color: #f6b22d;
-  background-position: 185px 0;
+  background-position: 185px -1px;
 }
 
 .promo-tools {
   background-color: #4aafde;
-  background-position: 185px -133px;
+  background-position: 185px -137px;
 }
 
 .promo-technique {
   background-color: #cc79d1;
-  background-position: 185px -266px;
+  background-position: 180px -274px;
 }
 
 .promo-discounts {
   background-color: #85d179;
-  background-position: 185px -399px;
+  background-position: 183px -398px;
 }
 
 .promo-delivery {
   background-color: #f6b22d;
-  background-position: 185px -532px;
+  background-position: 181px -537px;
 }
 
 .slider-promo {
   position: relative;
   float: left;
   width: 620px;
-  height: 265px;
+  height: 266px;
   margin-right: 20px;
 }
 
 .slide-promo {
   display: none;
-  min-height: 265px;
-  padding: 0 25px;
+  box-sizing: border-box;
+  min-height: 266px;
+  padding: 26px 25px 22px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .slider-promo .slide-text {
   max-width: 300px;
-  padding: 21px 0 18px;
 }
 
 .slider-promo .slide-title {
   display: block;
+  margin-bottom: 5px;
   font-size: 36px;
-  line-height: 46px;
+  line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
@@ -794,7 +802,7 @@ main.page-catalog {
 .btn-catalog-promo {
   display: block;
   width: 195px;
-  margin-top: 100px;
+  margin-top: 121px;
   background-color: #ee3643;
   border-radius: 3px;
 }
@@ -825,12 +833,13 @@ main.page-catalog {
 
 .slider-arrows {
   position: absolute;
-  top: 116px;
+  top: 115px;
   width: 100%;
 }
 
 .slider-arrows .arrow-left {
   float: left;
+  margin-left: 14px;
 }
 
 .slider-arrows .arrow-left::before {
@@ -874,10 +883,10 @@ main.page-catalog {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 32px;
+  bottom: 36px;
   width: 160px;
   height: 10px;
-  margin-left: -80px;
+  margin-left: -81px;
   text-align: center;
 }
 
@@ -908,13 +917,15 @@ main.page-catalog {
 }
 
 .popular-products {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
 
 .popular-products .title-block,
 .brands .title-block {
-  margin-bottom: 22px;
-  padding: 29px 25px 29px 29px;
+  margin-bottom: 20px;
+  padding: 25px 24px 25px 29px;
+  font-size: 30px;
+  line-height: 30px;
   background-color: #f7f3ec;
 }
 
@@ -940,7 +951,7 @@ main.page-catalog {
 .popular-products .btn-catalog-popular,
 .brands .btn-catalog-brands {
   display: block;
-  width: 252px;
+  width: 253px;
   background-color: #ee3643;
   border-radius: 3px;
 }
@@ -955,6 +966,11 @@ main.page-catalog {
   text-align: center;
   border: 1px solid #e5e5e5;
   overflow: hidden;
+}
+
+.products-item + .flag-new::after {
+  top: 5px;
+  right: -22px;
 }
 
 .products-item:last-child {
@@ -1049,15 +1065,16 @@ main.page-catalog {
 .products-item .title {
   font-size: 18px;
   line-height: 20px;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin-top: 2px;
+  margin-bottom: 13px;
   padding: 0 25px;
 }
 
 .products-item .price-old {
-  min-height: 25px;
-  margin-bottom: 10px;
+  min-height: 20px;
+  margin-bottom: 7px;
   font-size: 17px;
+  line-height: 18px;
   text-decoration: line-through;
   color: #999999;
 }
@@ -1066,7 +1083,7 @@ main.page-catalog {
   position: relative;
   width: 80px;
   margin: 0 auto 20px;
-  padding: 8px 30px;
+  padding: 7px 24px 7px 30px;
   font-size: 17px;
   color: #ffffff;
   background-color: #ee3643;
@@ -1077,15 +1094,19 @@ main.page-catalog {
   content: "";
   position: absolute;
   top: 0;
-  right: -20px;
+  right: -25px;
   width: 0;
   height: 0;
-  border: 20px solid #ffffff;
+  border: 19px solid #ffffff;
   border-left-color: #ee3643;
 }
 
 .brands {
   margin-bottom: 65px;
+}
+
+.brands .title-block {
+  padding-left: 25px;
 }
 
 .brands-list .brands-item {
@@ -1173,7 +1194,8 @@ margin-bottom: 70px;
 .slider-menu label {
   display: block;
   box-sizing: border-box;
-  padding: 15px 20px;
+  height: 60px;
+  padding: 14px 20px;
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
@@ -1215,15 +1237,15 @@ margin-bottom: 70px;
 }
 
 .slides-services .delivery {
-  background: url("../img/delivery.png") no-repeat 100% 0;
+  background: url("../img/delivery.png") no-repeat 151px 21px;
 }
 
 .slides-services .guarantee {
-  background: url("../img/guarantee.png") no-repeat 100% 30px;
+  background: url("../img/guarantee.png") no-repeat 239px -1px;
 }
 
 .slides-services .credit {
-  background: url("../img/credit.png") no-repeat 100% 30px;
+  background: url("../img/credit.png") no-repeat 181px -3px;
 }
 
 .slider-services .slide-title {
@@ -1237,7 +1259,7 @@ margin-bottom: 70px;
 .btn-credit {
   display: block;
   width: 195px;
-  margin-top: 30px;
+  margin-top: 24px;
   background-color: #ee3643;
   border-radius: 3px;
 }
@@ -1259,9 +1281,13 @@ margin-bottom: 70px;
   font-family: "PT Sans", "Arial", "Helvetica" sans-serif;
 }
 
+.info-description + .info-description {
+  margin-bottom: 19px;
+}
+
 .transport-companies {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   padding: 0;
   list-style: none;
 }
@@ -1312,7 +1338,7 @@ margin-bottom: 70px;
 }
 
 .image-map {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 /********* КАТАЛОГ *********/
@@ -1747,9 +1773,9 @@ input[type="radio"]:disabled + label::before {
   display: block;
   width: 200px;
   margin-bottom: 35px;
-  padding: 16px 10px;
-  font-size: 24px;
-  line-height: 24px;
+  padding: 18px 10px 15px;
+  font-size: 30px;
+  line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -1760,7 +1786,8 @@ input[type="radio"]:disabled + label::before {
 }
 
 .footer-contacts {
-  margin-bottom: 50px;
+  margin-left: 3px;
+  margin-bottom: 47px;
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
@@ -1768,7 +1795,6 @@ input[type="radio"]:disabled + label::before {
 
 .footer-contacts .address {
   display: block;
-  margin-bottom: 4px;
 }
 
 .footer-contacts .phone {
@@ -1793,7 +1819,7 @@ input[type="radio"]:disabled + label::before {
 }
 
 .footer-catalog {
-  margin-bottom: 70px;
+  margin-bottom: 72px;
 }
 
 .footer-menu a,
@@ -1805,6 +1831,10 @@ input[type="radio"]:disabled + label::before {
   vertical-align:top;
   text-decoration: none;
   color: #f1f5f7;
+}
+
+.footer-catalog a {
+  padding-top: 35px;
 }
 
 .footer-menu a:first-child {
@@ -1852,7 +1882,7 @@ input[type="radio"]:disabled + label::before {
 
 .footer-socials .btn {
   width: 40px;
-  margin-right: -3px;
+  margin-right: 1px;
   padding: 10px 0;
   font-size: 18px;
   line-height: 10,56px;
