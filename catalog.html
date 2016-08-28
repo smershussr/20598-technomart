@@ -54,13 +54,13 @@
       </div>
     </header>
 
-    <main>
+    <main class="page-catalog">
       <div class="container">
         <div class="breadcrumbs">
-          <a href="#">Главная</a>
+          <a class="home" href="#"></a>
           <a href="#">Каталог</a>
           <a href="#">Инструмент</a>
-          <a>Перфораторы</a>
+          <a class="current">Перфораторы</a>
         </div>
         <h1 class="page-title">Перфораторы</h1>
         <div class="catalog clearfix">
@@ -72,15 +72,14 @@
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
-                      <div class="bar">
-                        <div class="toggle min-toggle"></div>
-                        <div class="toggle max-toggle"></div>
-                      </div>
+                      <div class="bar"></div>
                     </div>
+                    <div class="toggle min-toggle"></div>
+                    <div class="toggle max-toggle"></div>
                   </div>
                   <div class="price-controls">
-                    <input class="min-price" type="text" value="0">
-                    - <input class="max-price" type="text" value="30000">
+                    <input class="min-price" type="text" name="min=price" value="0">
+                    <input class="max-price" type="text" name="max-price" value="30000">
                   </div>
                 </div>
               </div>
@@ -106,18 +105,18 @@
                 <input type="radio" name="power-type-item" id="mains-supply" value="mains supply">
                 <label for="mains-supply">Сетевые</label>
               </div>
-              <button class="btn-filter" type="submit">Показать</button>
+              <button class="btn btn-filter" type="submit">Показать</button>
             </form>
           </div>
           <div class="products clearfix">
             <div class="products-sorting clearfix">
-                <div class="sorting-title">Сотртировка:</div>
+                <div class="sorting-title">Сортировка:</div>
                 <div class="sorting-options">
                   <a class="option option-active" href="#">По цене</a>
                   <a class="option" href="#">По типу</a>
                   <a class="option" href="#">По функционалу</a>
-                  <a class="option option-active" href="#">По убыванию</a>
-                  <a class="option" href="#">По возрастанию</a>
+                  <a class="option option-active" href="#">▲</a>
+                  <a class="option" href="#">▼</a>
                 </div>
             </div>
             <article class="products-item">
@@ -211,10 +210,10 @@
               <div class="price">12500 Р.</div>
             </article>
             <div class="catalog-panigator">
-              <a class="btn-panigator btn-panigator-active">1</a>
-              <a class="btn-panigator" href="#">2</a>
-              <a class="btn-panigator" href="#">3</a>
-              <a class="btn-panigator btn-panigator-next" href="#">Следующая</a>
+              <a class="btn btn-panigator-active">1</a>
+              <a class="btn" href="#">2</a>
+              <a class="btn" href="#">3</a>
+              <a class="btn btn-panigator-next" href="#">Следующая</a>
             </div>
           </div>
         </div>
