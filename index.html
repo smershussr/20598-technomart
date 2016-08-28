@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Главная - Техномарт</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -11,13 +12,13 @@
         <div class="container clearfix">
           <a class="logo">Техномарт</a>
           <form class="search" action="#" method="post">
-            <button class="btn-search" type="submit"></button>
             <input type="search" placeholder="Поиск:">
+            <button class="btn-search" type="submit"></button>
           </form>
           <div class="user-controls clearfix">
-            <a class="bookmarks" href="#">Закладки: 0</a>
-            <a class="cart" href="#">Корзина: 0</a>
-            <a class="order" href="#">Оформить заказ</a>
+            <a class="user-controls-item bookmarks" href="#">Закладки: 0</a>
+            <a class="user-controls-item cart" href="#">Корзина: 0</a>
+            <a class="user-controls-item order" href="#">Оформить заказ</a>
           </div>
         </div>
       </div>
@@ -25,20 +26,20 @@
         <div class="container">
           <div class="header-bottom-wrapper clearfix">
             <p class="shop-description">
-              Интернет-магазин
-              строительных товаров
+              Интернет-магазин<br>
+              строительных материалов<br>
               и инструментов для ремонта
             </p>
             <div class="header-contacts">
-              <a href="tel:+78125550555">+7 (812)555-05-55</a>
+              <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
               <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
             </div>
-            <div class="user-block">
-              <a href="#">Войти</a>
-              <a href="#">Регистрация</a>
+            <div class="user-block clearfix">
+              <a class="user-block-btn" href="#">Войти</a>
+              <a class="user-block-btn" href="#">Регистрация</a>
             </div>
           </div>
-          <nav class="main-menu">
+          <nav class="main-menu clearfix">
             <a href="index.html">Главная</a>
             <a href="#">Компания</a>
             <a href="catalog.html">Каталог</a>
@@ -55,60 +56,58 @@
       <div class="container">
         <div class="promo-block clearfix">
           <div class="promo promo-materials flag-new">
-            <span>Материалы</span>
-            <a href="#">на любой вкус</a>
+            <span class="promo-title">Материалы</span>
+            <a class="btn btn-promo" href="#">на любой вкус</a>
           </div>
           <div class="promo promo-tools">
-            <span>Инструмент</span>
-            <a href="#">на все случаи</a>
+            <span class="promo-title">Инструмент</span>
+            <a class="btn btn-promo" href="#">на все случаи</a>
           </div>
           <div class="promo promo-technique">
-            <span>Техника</span>
-            <a href="#">для стройки</a>
+            <span class="promo-title">Техника</span>
+            <a class="btn btn-promo" href="#">для стройки</a>
           </div>
           <div class="slider-promo">
             <input type="radio" name="toogle" id="toogle-promo-1" checked>
             <input type="radio" name="toogle" id="toogle-promo-2">
             <div class="slider-arrows">
-              <div class="slider-arrows-1">
-                <label class="slider-arrow-disabled" for="toogle-promo-1"></label>
-                <label for="toogle-promo-2"></label>
+              <div class="slider-arrows-item clearfix">
+                <label class="slider-arrow arrow-left" for="toogle-promo-1"></label>
+                <label class="slider-arrow arrow-right" for="toogle-promo-2"></label>
               </div>
-              <div class="slider-arrows-2">
-                <label for="toogle-promo-1"></label>
-                <label class="slider-arrow-disabled" for="toogle-promo-2"></label>
+              <div class="slider-arrows-item clearfix">
+                <label class="slider-arrow arrow-left" for="toogle-promo-1"></label>
+                <label class="slider-arrow arrow-right" for="toogle-promo-2"></label>
               </div>
             </div>
             <div class="slider-controls">
               <label for="toogle-promo-1"></label>
               <label for="toogle-promo-2"></label>
             </div>
-            <div class="slider-inner-promo">
-              <div class="slide-promo slide-promo-1">
-                <img src="img/slide-promo-1.jpg" width="620" height="266" alt="Перфораторы">
-                <div class="slider-text">
-                  <span class="slider-title">Перфораторы</span>
-                  <span class="slider-description">Настоящие мужские игрушки</span>
+            <div class="slides-promo">
+              <div class="slide-promo">
+                <div class="slide-text">
+                  <span class="slide-title">Перфораторы</span>
+                  <span class="slide-description">Настоящие мужские игрушки</span>
                 </div>
-                <a class="btn btn-catalog" href="#">Открыть каталог</a>
+                <a class="btn btn-catalog-promo" href="catalog.html">Открыть каталог</a>
               </div>
-              <div class="slide-promo slide-promo-2">
-                <img src="img/slide-promo-2.jpg" width="620" height="266" alt="Дрели">
-                <div class="slider-text">
-                  <span class="slider-title">Дрели</span>
-                  <span class="slider-description">Соседям на радость!</span>
+              <div class="slide-promo">
+                <div class="slide-text">
+                  <span class="slide-title">Дрели</span>
+                  <span class="slide-description">Соседям на радость!</span>
                 </div>
-                <a class="btn btn-catalog-promo" href="#">Открыть каталог</a>
+                <a class="btn btn-catalog-promo" href="catalog.html">Открыть каталог</a>
               </div>
             </div>
           </div>
           <div class="promo promo-discounts">
-            <span>Скидки 50%</span>
-            <a href="#">на 350 товаров</a>
+            <span class="promo-title">Скидки 50%</span>
+            <a class="btn btn-promo" href="#">на 350 товаров</a>
           </div>
           <div class="promo promo-delivery">
-            <span>Доставка</span>
-            <a href="#">бесплатно</a>
+            <span class="promo-title">Доставка</span>
+            <a class="btn btn-promo" href="#">бесплатно</a>
           </div>
         </div>
         <section class="popular-products">
@@ -118,25 +117,41 @@
           </div>
           <div class="products-list clearfix">
             <article class="products-item">
-              <img src="img/product-item-1.jpg" width="180" height="160" alt="Перфоратор BOSCH BFG 9000">
+              <div class="actions">
+                  <a href="#" class="btn btn-buy">Купить</a>
+                  <a href="#" class="btn btn-bookmark">В закладки</a>
+              </div>
+              <img src="img/product-item-1.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 9000">
               <h2 class="title">Перфоратор BOSCH BFG 9000</h2>
               <div class="price-old">32500 Р.</div>
               <div class="price">25500 Р.</div>
             </article>
             <article class="products-item">
-              <img src="img/product-item-2.jpg" width="180" height="160" alt="Перфоратор BOSCH BFG 3000">
+              <div class="actions">
+                  <a href="#" class="btn btn-buy">Купить</a>
+                  <a href="#" class="btn btn-bookmark">В закладки</a>
+              </div>
+              <img src="img/product-item-2.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 3000">
               <h2 class="title">Перфоратор BOSCH BFG 3000</h2>
               <div class="price-old">22500 Р.</div>
               <div class="price">15500 Р.</div>
             </article>
             <article class="products-item">
-              <img src="img/product-item-3.jpg" width="180" height="160" alt="Перфоратор BOSCH BFG 6000">
+              <div class="actions">
+                  <a href="#" class="btn btn-buy">Купить</a>
+                  <a href="#" class="btn btn-bookmark">В закладки</a>
+              </div>
+              <img src="img/product-item-3.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 6000">
               <h2 class="title">Перфоратор BOSCH BFG 6000</h2>
               <div class="price-old">30500 Р.</div>
               <div class="price">25500 Р.</div>
             </article>
             <article class="products-item flag-new">
-              <img src="img/product-item-2.jpg" width="180" height="160" alt="Перфоратор BOSCH BFG 2000">
+              <div class="actions">
+                  <a href="#" class="btn btn-buy">Купить</a>
+                  <a href="#" class="btn btn-bookmark">В закладки</a>
+              </div>
+              <img src="img/product-item-2.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 2000">
               <h2 class="title">Перфоратор BOSCH BFG 2000</h2>
               <div class="price-old"></div>
               <div class="price">12500 Р.</div>
@@ -145,18 +160,18 @@
         </section>
         <section class="brands">
           <div class="title-block clearfix">
-            <h2 class="section-title">Производители:</h2>
+            <h2 class="section-title">Популярные производители:</h2>
             <a class="btn btn-catalog-brands" href="#">Все производители</a>
           </div>
           <div class="brands-list clearfix">
-            <a class="brands-item" href="#"><img src="img/bosch.png" width="220" height="145" alt="Bosch"></a>
-            <a class="brands-item" href="#"><img src="img/makita.png" width="220" height="145" alt="Makita"></a>
-            <a class="brands-item" href="#"><img src="img/dewalt.png" width="220" height="145" alt="DeWalt"></a>
-            <a class="brands-item" href="#"><img src="img/interskol.png" width="220" height="145" alt="Интерскол"></a>
-            <a class="brands-item" href="#"><img src="img/hitachi.png" width="220" height="145" alt="Hitachi"></a>
-            <a class="brands-item" href="#"><img src="img/lg.png" width="220" height="145" alt="LG"></a>
-            <a class="brands-item" href="#"><img src="img/aeg.png" width="220" height="145" alt="AEG"></a>
-            <a class="brands-item" href="#"><img src="img/metabo.png" width="220" height="145" alt="Metabo"></a>
+            <a class="brands-item" href="#"><img src="img/bosch.png" width="218" height="143" alt="Bosch"></a>
+            <a class="brands-item" href="#"><img src="img/makita.png" width="218" height="143" alt="Makita"></a>
+            <a class="brands-item" href="#"><img src="img/dewalt.png" width="218" height="143" alt="DeWalt"></a>
+            <a class="brands-item" href="#"><img src="img/interskol.png" width="218" height="143" alt="Интерскол"></a>
+            <a class="brands-item" href="#"><img src="img/hitachi.png" width="218" height="143" alt="Hitachi"></a>
+            <a class="brands-item" href="#"><img src="img/lg.png" width="218" height="143" alt="LG"></a>
+            <a class="brands-item" href="#"><img src="img/aeg.png" width="218" height="143" alt="AEG"></a>
+            <a class="brands-item" href="#"><img src="img/metabo.png" width="218" height="143" alt="Metabo"></a>
           </div>
         </section>
       </div>
@@ -170,15 +185,15 @@
             </p>
           </div>
           <div class="slider-services clearfix">
-            <input type="radio" name="toogle" id="toogle-delivery" checked>
-            <input type="radio" name="toogle" id="toogle-guarantee">
-            <input type="radio" name="toogle" id="toogle-credit">
+            <input type="radio" name="toogle-service" id="toogle-delivery" checked>
+            <input type="radio" name="toogle-service" id="toogle-guarantee">
+            <input type="radio" name="toogle-service" id="toogle-credit">
             <div class="slider-menu">
               <label for="toogle-delivery">Доставка</label>
               <label for="toogle-guarantee">Гарантия</label>
               <label for="toogle-credit">Кредит</label>
             </div>
-            <div class="slider-inner-services">
+            <div class="slides-services">
               <div class="slide-services delivery">
                 <div class="slide-title">Доставка</div>
                 <div class="slide-text">
@@ -215,7 +230,7 @@
           <div class="info-left">
             <h1 class="info-title">Компания &laquo;Техномарт&raquo;</h1>
             <p class="info-description">
-              Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+              Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
               строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
             </p>
             <p class="info-description">
@@ -232,7 +247,7 @@
           <div class="info-right">
             <h2 class="info-title">Контакты</h2>
             <p class="info-description">
-              Вы можете забрать товар сами,
+              Вы можете забрать товар сами,<br>
               заехав в наш офис.
             </p>
             <div class="image-map">
@@ -250,19 +265,19 @@
           <div class="footer-top-left">
             <a class="logo">Техномарт</a>
             <div class="footer-contacts">
-              <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-              <a href="tel:+78125550555">+7 (812)555-05-55</a>
+              <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+              <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
             </div>
           </div>
           <div class="footer-top-right">
-            <div class="footer-menu">
+            <div class="footer-menu clearfix">
               <a href="#">Компания</a>
               <a href="#">Новости</a>
               <a href="catalog.html">Каталог</a>
               <a href="#">Доставка</a>
               <a href="#">Контакты</a>
             </div>
-            <div class="footer-catalog">
+            <div class="footer-catalog clearfix">
               <a href="#">Материалы</a>
               <a href="#">Техника</a>
               <a href="#">Инструмент</a>
@@ -278,9 +293,9 @@
             <p>Все права защищены</p>
           </div>
           <div class="footer-socials">
-            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            <a class="btn btn-social-vk" href="#"></a>
+            <a class="btn btn-social-fb" href="#"></a>
+            <a class="btn btn-social-inst" href="#"></a>
           </div>
           <div class="footer-feedback">
             <p>Обратная связь:</p>
