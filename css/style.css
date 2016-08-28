@@ -1141,7 +1141,7 @@ main.page-catalog {
 }
 
 .services-title-block {
-max-width: 370px;
+max-width: 400px;
 margin-bottom: 70px;
 }
 
@@ -1161,7 +1161,7 @@ margin-bottom: 70px;
 .slider-services .slide-text {
   font-size: 13px;
   line-height: 24px;
-  font-family: "PT Sans", "Arial", "Helvetica" sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
 }
 
 .slider-services {
