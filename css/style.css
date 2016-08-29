@@ -1133,6 +1133,12 @@ main.page-catalog {
   margin-right: 0;
 }
 
+.brands img {
+  width: 218px;
+  height: 143px;
+  overflow: hidden;
+}
+
 .brands-list .brands-item:hover {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
