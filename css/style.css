@@ -1239,15 +1239,15 @@ main.page-catalog {
 }
 
 .slides-services .delivery {
-  background: url("../img/delivery.png") no-repeat 151px 21px;
+  background: url("../img/delivery.png") no-repeat 100% 21px;
 }
 
 .slides-services .guarantee {
-  background: url("../img/guarantee.png") no-repeat 239px -1px;
+  background: url("../img/guarantee.png") no-repeat 100% -1px;
 }
 
 .slides-services .credit {
-  background: url("../img/credit.png") no-repeat 181px -3px;
+  background: url("../img/credit.png") no-repeat 100% -3px;
 }
 
 .slider-services .slide-title {
