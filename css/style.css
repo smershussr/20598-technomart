@@ -828,10 +828,12 @@ main.page-catalog {
 }
 
 .slide-promo:nth-child(1) {
+  background-color: #665545; /* если изображение не загрузилось */
   background-image: url("../img/slide-promo-1.jpg");
 }
 
 .slide-promo:nth-child(2) {
+  background-color: #382320; /* если изображение не загрузилось */
   background-image: url("../img/slide-promo-2.jpg");
 }
 
