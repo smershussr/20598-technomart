@@ -467,9 +467,10 @@ input[type="search"]:focus:-ms-input-placeholder      { color: transparent; }
   box-sizing: border-box;
   max-width: 270px;
   margin-bottom: 4px;
-  padding: 11px 49px 10px 71px;
+  padding: 11px 10px 11px 32px;
   font-size: 21px;
-  line-height: 18px;
+  line-height: 17px;
+  text-align: center;
   text-decoration: none;
   color: #e9292a;
   border: 3px solid #ffffff;
