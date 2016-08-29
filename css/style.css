@@ -293,15 +293,6 @@ form.search {
   content: "🔍";
 } /* "\1f50d" */
 
-input[type="search"]:hover + .btn-search,
-.btn-search:hover {
-  opacity: 1;
-}
-
-.btn-search:active {
-  opacity: 0.3;
-}
-
 input[type="search"] {
   width: 270px;
   height: 42px;
@@ -316,10 +307,27 @@ input[type="search"] {
   border: none;
 }
 
-input[type="search"]::-webkit-input-placeholder { color:#ffffff; }
-input[type="search"]::-moz-placeholder          { color:#ffffff; } /* Firefox 19+ */
-input[type="search"]:-moz-placeholder           { color:#ffffff; } /* Firefox 18- */
-input[type="search"]:-ms-input-placeholder      { color:#ffffff; }
+input[type="search"]::-webkit-input-placeholder {
+  color:#ffffff;
+}
+
+input[type="search"]::-moz-placeholder { /* Firefox 19+ */
+  color:#ffffff;
+  opacity: 1;
+}
+
+input[type="search"]:-ms-input-placeholder {
+  color:#ffffff;
+}
+
+input[type="search"]:hover + .btn-search,
+.btn-search:hover {
+  opacity: 1;
+}
+
+.btn-search:active {
+  opacity: 0.3;
+}
 
 input[type="search"]:hover,
 .bookmarks:hover,
@@ -334,6 +342,7 @@ input[type="search"] + .btn-search:active {
 input[type="search"]:focus {
   color: #000000;
   background-color: #ffffff;
+  outline: none;
 }
 
 input[type="search"]:focus + .btn-search {
@@ -341,10 +350,17 @@ input[type="search"]:focus + .btn-search {
   opacity: 1;
 }
 
-input[type="search"]:focus::-webkit-input-placeholder { color: transparent; }
-input[type="search"]:focus::-moz-placeholder          { color: transparent; } /* Firefox 19+ */
-input[type="search"]:focus:-moz-placeholder           { color: transparent; } /* Firefox 18- */
-input[type="search"]:focus:-ms-input-placeholder      { color: transparent; }
+input[type="search"]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input[type="search"]:focus::-moz-placeholder { /* Firefox 19+ */
+  color: transparent;
+}
+
+input[type="search"]:focus:-ms-input-placeholder {
+  color: transparent;
+}
 
 .user-controls {
   float: right;
