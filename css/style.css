@@ -527,7 +527,7 @@ input[type="search"]:focus:-ms-input-placeholder {
   font-size: 21px;
   line-height: 18px;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
   text-decoration: none;
   color: #000000;
   background-color: #ffffff;
@@ -714,7 +714,8 @@ main.page-catalog {
   height: 27px;
   text-align: center;
   background: #ee3643 url("../img/flag-new.svg") no-repeat 50% 50%;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .promo-title {
@@ -854,7 +855,7 @@ main.page-catalog {
 }
 
 .slider-arrows .arrow-left::before {
-  content: "\3c"; /* "&lt;" */
+  content: "\3c"; /* "<" */
 }
 
 .slider-arrows .arrow-right {
@@ -862,7 +863,7 @@ main.page-catalog {
 }
 
 .slider-arrows .arrow-right::before {
-   content: "\3e"; /* "&gt;" */
+   content: "\3e"; /* ">" */
 }
 
 .slider-arrows .slider-arrow {
