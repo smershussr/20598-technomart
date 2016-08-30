@@ -2028,7 +2028,6 @@ input[type="radio"]:disabled + label::before {
   transform: rotate(-45deg);
 }
 
-
 /********* КАРТА *********/
 
 .modal-map {
@@ -2183,7 +2182,7 @@ input[type="radio"]:disabled + label::before {
   top: 50%;
   left: 50%;
   z-index: 100;
-  /*display: none;*/
+  display: none;
   width: 620px;
   max-height: 284px;
   margin-top: -142px;
