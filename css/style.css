@@ -2194,6 +2194,8 @@ input[type="radio"]:disabled + label::before {
 
 .modal-add-cart .notification {
   position: relative;
+  width: 460px;
+  margin: 0 auto;
   padding: 71px 10px 74px 65px;
   font-size: 30px;
   line-height: 18px;
@@ -2204,7 +2206,7 @@ input[type="radio"]:disabled + label::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 80px;
+  left: 38px;
   width: 65px;
   height: 65px;
   margin-top: -34px;
