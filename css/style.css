@@ -1996,22 +1996,6 @@ input[type="radio"]:disabled + label::before {
   background: rgba(0, 0, 0, 0);
 }
 
-/********* КАРТА *********/
-
-.modal-map {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 100;
-  display: none;
-  width: 940px;
-  height: 446px;
-  margin-top: -223px;
-  margin-left: -470px;
-  background: #444444 url("../img/map.png");
-  box-shadow: 0px 0px 16px 2px rgba(35, 31, 32, 0.5);
-}
-
 .modal-close {
   position: absolute;
   top: 9px;
@@ -2044,6 +2028,23 @@ input[type="radio"]:disabled + label::before {
   transform: rotate(-45deg);
 }
 
+
+/********* КАРТА *********/
+
+.modal-map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  display: none;
+  width: 940px;
+  height: 446px;
+  margin-top: -223px;
+  margin-left: -470px;
+  background: #444444 url("../img/map.png");
+  box-shadow: 0px 0px 16px 2px rgba(35, 31, 32, 0.5);
+}
+
 /********* ФОРМА ОБРАТНОЙ СВЯЗИ *********/
 
 .modal-write-us {
@@ -2051,7 +2052,7 @@ input[type="radio"]:disabled + label::before {
   top: 50%;
   left: 50%;
   z-index: 100;
-  /*display: none;*/
+  display: none;
   width: 620px;
   max-height: 430px;
   margin-top: -215px;
@@ -2162,7 +2163,7 @@ input[type="radio"]:disabled + label::before {
   background-color: #f1f1f1;
 }
 
-.modal-write-us .btn-send-modal {
+.modal-write-us .btn-send-message {
   width: 460px;
   padding: 12px 10px;
   font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
@@ -2172,4 +2173,68 @@ input[type="radio"]:disabled + label::before {
   border: none;
   border-radius: 3px;
   outline: none;
+  cursor: pointer;
+}
+
+/********* ФОРМА ДОБАВЛЕНИЯ ТОВАРА В КОРЗИНУ *********/
+
+.modal-add-cart {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  /*display: none;*/
+  width: 620px;
+  max-height: 284px;
+  margin-top: -142px;
+  margin-left: -310px;
+  background-color: #ffffff;
+  border-top: 7px solid #ee3643;
+  box-shadow: 0px 20px 40px 0px rgba(41, 52, 73, 0.75);
+}
+
+.modal-add-cart .notification {
+  position: relative;
+  padding: 71px 10px 74px 65px;
+  font-size: 30px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.modal-add-cart .notification::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  width: 65px;
+  height: 65px;
+  margin-top: -34px;
+  background: #63a63e url("../img/check.svg") no-repeat 15px 21px;
+  border-radius: 50%;
+}
+
+.modal-add-cart .modal-footer {
+  padding: 37px 80px;
+  background-color: #f1f1f1;
+}
+
+.modal-add-cart .btn-order,
+.modal-add-cart .btn-cancel {
+  width: 220px;
+  margin-right: 17px;
+  padding: 12px 10px;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  background-color: #ee3643;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-add-cart .btn-cancel {
+  margin-right: -3px;
+  color: #000000;
+  background-color: #ffffff;
 }
