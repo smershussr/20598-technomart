@@ -316,12 +316,29 @@
       <div id="yandex-map"></div>
     </div>
 
-
-
-    <!--<div class="modal-write-us">
+    <div class="modal-write-us">
       <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
-
-    </div>-->
+      <form class="write-us" action="#" method="post">
+        <div class="container">
+          <div class="columns clearfix">
+            <div class="index-column">
+              <label for="your-name-id">Ваше имя:</label><br>
+              <input type="text" name="your-name" id="your-name-id" placeholder="Представьтесь, пожалуйста" required>
+            </div>
+            <div class="index-column">
+              <label for="email-id">Ваш e-mail:</label><br>
+              <input type="text" name="email" id="email-id" placeholder="Для отправки ответа" required>
+            </div>
+          </div>
+          <label class="message-box" for="message-id">Текст письма<br>
+            <textarea name="message" id="message-id" placeholder="В свободной форме"></textarea>
+          </label>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-send-modal" type="submit" title="Отправить">Отправить</button>
+        </div>
+      </form>
+    </div>
 
 
 

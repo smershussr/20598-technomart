@@ -2009,7 +2009,7 @@ input[type="radio"]:disabled + label::before {
   margin-top: -223px;
   margin-left: -470px;
   background: #444444 url("../img/map.png");
-  box-shadow: 0px 0px 16px 2px rgba(35, 31, 32, 0.5)
+  box-shadow: 0px 0px 16px 2px rgba(35, 31, 32, 0.5);
 }
 
 .modal-close {
@@ -2019,6 +2019,7 @@ input[type="radio"]:disabled + label::before {
   width: 22px;
   height: 22px;
   font-size: 0;
+  background: none;
   border: none;
   outline: none;
   cursor: pointer;
@@ -2041,4 +2042,134 @@ input[type="radio"]:disabled + label::before {
 
 .modal-close::after {
   transform: rotate(-45deg);
+}
+
+/********* ФОРМА ОБРАТНОЙ СВЯЗИ *********/
+
+.modal-write-us {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  /*display: none;*/
+  width: 620px;
+  max-height: 430px;
+  margin-top: -215px;
+  margin-left: -310px;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: #ffffff;
+  border-top: 7px solid #ee3643;
+  box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
+}
+
+.modal-write-us .container {
+  width: 460px;
+  margin: 0 auto;
+}
+
+.modal-write-us .columns {
+  margin-top: 47px;
+  margin-bottom: 20px;
+}
+
+.modal-write-us .index-column {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+}
+
+.modal-write-us .index-column:last-child {
+  margin-right: 0;
+}
+
+.modal-write-us input[type="text"],
+.modal-write-us textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 9px;
+  padding: 9px 15px 7px;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+  outline: none;
+}
+
+.modal-write-us input[type="text"]::-webkit-input-placeholder {
+  color:#999999;
+}
+
+.modal-write-us input[type="text"]::-moz-placeholder { /* Firefox 19+ */
+  color:#999999;
+  opacity: 1;
+}
+
+.modal-write-us input[type="text"]:-ms-input-placeholder {
+  color:#999999;
+}
+
+.modal-write-us input[type="text"]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.modal-write-us input[type="text"]:focus::-moz-placeholder { /* Firefox 19+ */
+  color: transparent;
+}
+
+.modal-write-us input[type="text"]:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.modal-write-us .message-box {
+  display: block;
+  margin-bottom: 33px;
+}
+
+.modal-write-us textarea {
+  margin-top: 10px;
+  height: 114px;
+}
+
+.modal-write-us textarea::-webkit-input-placeholder {
+  color:#999999;
+}
+
+.modal-write-us textarea::-moz-placeholder { /* Firefox 19+ */
+  color:#999999;
+  opacity: 1;
+}
+
+.modal-write-us textarea:-ms-input-placeholder {
+  color:#999999;
+}
+
+.modal-write-us textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.modal-write-us textarea:focus::-moz-placeholder { /* Firefox 19+ */
+  color: transparent;
+}
+
+.modal-write-us textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.modal-write-us .modal-footer {
+  padding: 37px 80px;
+  background-color: #f1f1f1;
+}
+
+.modal-write-us .btn-send-modal {
+  width: 460px;
+  padding: 12px 10px;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  background-color: #ee3643;
+  border: none;
+  border-radius: 3px;
+  outline: none;
 }
