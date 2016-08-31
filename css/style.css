@@ -77,23 +77,6 @@
     url("../fonts/symbols-technomart.woff") format("woff");
 }
 
-/*.btn-search,*/
-/*.btn-search::before,*/
-/*.bookmarks::before,*/
-/*.cart::before,*/
-/*.phone::before,*/
-/*.user-block-btn::before,*/
-/*.slider-arrow,*/
-/*.btn-buy::before,*/
-/*.btn-social-vk::before,*/
-/*.btn-social-fb::before,*/
-/*.btn-social-inst::before,*/
-/*.home::before,*/
-/*.breadcrumbs a::after,*/
-/*input[type="checkbox"] + label::before,*/
-/*input[type="radio"] + label::before,*/
-/*.dir-up::before,*/
-/*.dir-down::before,*/
 .icon::before,
 .icon::after {
   display: inline-block;
@@ -571,10 +554,12 @@ input[type="search"]:focus:-ms-input-placeholder {
 }
 
 .main-menu a {
-  float: left;
-  padding: 20px 31px 18px 29px;
+  display: inline-block;
+  margin-right: -3px;
+  padding: 20px 30px 18px;
   font-size: 17px;
   line-height: 17px;
+  vertical-align: top;
   text-decoration: none;
   color: #ffffff;
 }
