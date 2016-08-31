@@ -1803,6 +1803,8 @@ input[type="radio"]:disabled + label::before {
 .footer-top-right {
   float: right;
   max-width: 600px;
+  margin-top: 20px;
+  margin-bottom: 52px;
 }
 
 .footer-menu,
@@ -1811,14 +1813,10 @@ input[type="radio"]:disabled + label::before {
   text-align: right;
 }
 
-.footer-catalog {
-  margin-bottom: 72px;
-}
-
 .footer-menu a,
 .footer-catalog a {
   display: inline-block;
-  padding: 38px 0 0 60px;
+  padding: 17px 30px;
   font-size: 18px;
   line-height: 24px;
   vertical-align:top;
@@ -1827,15 +1825,11 @@ input[type="radio"]:disabled + label::before {
 }
 
 .footer-catalog a {
-  padding-top: 35px;
   color: #ffd180;
 }
 
-.footer-menu a:first-child {
-  padding-left: 0;
-}
-
-.footer-menu a:last-child {
+.footer-menu a:last-child,
+.footer-catalog a:last-child {
   padding-right: 0;
 }
 
@@ -1860,14 +1854,15 @@ input[type="radio"]:disabled + label::before {
 
 .footer-copyright {
   float: left;
-  width: 230px;
-  margin-right: 160px;
+  width: 280px;
+  margin-right: 10px;
 }
 
 .footer-socials {
   float: left;
-  width: 170px;
-  margin-right: 80px;
+  width: 330px;
+  margin-right: 20px;
+  text-align: center;
 }
 
 .footer-socials .btn {
