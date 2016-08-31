@@ -1288,7 +1288,7 @@ main.page-catalog {
 }
 
 .breadcrumbs {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   padding: 0;
 }
 
@@ -1478,7 +1478,8 @@ main.page-catalog {
   content: "";
   position: absolute;
   top: 50%;
-  left: 107px;
+  /*left: 107px;*/
+  right: 48%;
   width: 10px;
   height: 1px;
   font-size: 16px;
@@ -1645,6 +1646,7 @@ input[type="radio"]:disabled + label::before {
 
 .sorting-options .dir-up,
 .sorting-options .dir-down {
+  font-size: 0;
   color: #c6c2bd;
   opacity: 1;
 }
@@ -1693,14 +1695,14 @@ input[type="radio"]:disabled + label::before {
     margin-right: 0;
 }
 
-.catalog-panigator {
+.catalog-paginator {
   float: left;
   width: 700px;
   margin-top: 32px;
   font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
 }
 
-.catalog-panigator .btn {
+.catalog-paginator .btn {
   min-width: 38px;
   margin-right: 7px;
   color: #000000;
@@ -1708,22 +1710,22 @@ input[type="radio"]:disabled + label::before {
   border-radius: 3px;
 }
 
-.catalog-panigator .btn-panigator-active {
+.catalog-paginator .btn-paginator-active {
   color: #ffffff;
   background-color: #ee3643;
   border: none;
   pointer-events: none;
 }
 
-.catalog-panigator .btn-panigator-next {
-  width: 140px;
+.catalog-paginator .btn-paginator-next {
+  padding: 10px 28px;
 }
 
-.catalog-panigator .btn:hover {
+.catalog-paginator .btn:hover {
   border-color: #bdc6ca;
 }
 
-.catalog-panigator .btn:active {
+.catalog-paginator .btn:active {
   border-color: #ee3643;
 }
 
@@ -1872,10 +1874,11 @@ input[type="radio"]:disabled + label::before {
 
 .footer-socials .btn {
   width: 40px;
+  height: 40px;
   margin-right: 1px;
-  padding: 10px 0;
+  padding: 0;
   font-size: 18px;
-  line-height: 10,56px;
+  line-height: 40px;
   text-align: center;
   background-color: #212a3a;
   border-radius: 50%
