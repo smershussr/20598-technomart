@@ -1114,6 +1114,10 @@ main.page-catalog {
   line-height: 24px;
 }
 
+.slider-services .slide-text {
+  max-width: 330px;
+}
+
 .slider-services {
   position: relative;
   min-height: 180px;
