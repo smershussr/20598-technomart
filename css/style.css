@@ -919,8 +919,9 @@ main.page-catalog {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   display: none;
-  width: 218px;
+  /*width: 218px;*/
   height: 88px;
   padding: 43px 0 43px 1px;
   font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
@@ -951,7 +952,7 @@ main.page-catalog {
   box-shadow: none;
 }
 
-.actions .btn-buy::before {
+.actions .btn-buy.icon::before {
   content: "\62";
   position: absolute;
   top: 10px;
