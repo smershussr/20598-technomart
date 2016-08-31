@@ -12,7 +12,7 @@
         <div class="container clearfix">
           <a class="logo">Техномарт</a>
           <form class="search" action="#" method="post">
-            <input type="search" placeholder="Поиск:">
+            <input type="search" name="search-field" placeholder="Поиск:">
             <button class="btn-search" type="submit"></button>
           </form>
           <div class="user-controls clearfix">
@@ -323,15 +323,15 @@
           <div class="columns clearfix">
             <div class="index-column">
               <label for="your-name-id">Ваше имя:</label><br>
-              <input type="text" name="your-name" id="your-name-id" placeholder="Представьтесь, пожалуйста" required>
+              <input type="text" name="your-name-field" id="your-name-id" placeholder="Представьтесь, пожалуйста" required>
             </div>
             <div class="index-column">
               <label for="email-id">Ваш e-mail:</label><br>
-              <input type="text" name="email" id="email-id" placeholder="Для отправки ответа" required>
+              <input type="text" name="email-field" id="email-id" placeholder="Для отправки ответа" required>
             </div>
           </div>
           <label class="message-box" for="message-id">Текст письма<br>
-            <textarea name="message" id="message-id" placeholder="В свободной форме"></textarea>
+            <textarea name="message-field" id="message-id" placeholder="В свободной форме"></textarea>
           </label>
         </div>
         <div class="modal-footer">
