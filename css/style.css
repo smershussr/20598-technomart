@@ -1294,6 +1294,7 @@ main.page-catalog {
 
 .breadcrumbs-item:first-child {
   padding-right: 15px;
+  font-size: 0;
 }
 
 .breadcrumbs-item {
@@ -1324,6 +1325,10 @@ main.page-catalog {
   line-height: 20px;
   color: #c1c6ce;
   pointer-events: none
+}
+
+.breadcrumbs-item:first-child.icon::after {
+  top: -16px;
 }
 
 .breadcrumbs-item:first-child.icon::before {
