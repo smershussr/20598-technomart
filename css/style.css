@@ -86,7 +86,7 @@
   font-family: "symbols-technomart";
   font-weight: normal;
   font-style: normal;
-  line-height: 18px;
+  /*line-height: 18px;*/
   text-align: center;
   vertical-align: top;
   text-transform: none;
@@ -756,13 +756,21 @@ main.page-catalog {
 
 .slider-arrows {
   position: absolute;
-  top: 115px;
+  top: 50%;
   width: 100%;
+  margin-top: -23px;
+}
+
+.slider-arrows .slider-arrow {
+  height: 45px;
+  font-size: 45px;
+  line-height: 45px;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .slider-arrows .arrow-left {
   float: left;
-  margin-left: 14px;
 }
 
 .slider-arrows .arrow-left.icon::before {
@@ -775,15 +783,6 @@ main.page-catalog {
 
 .slider-arrows .arrow-right.icon::before {
    content: "\3e"; /* ">" */
-}
-
-.slider-arrows .slider-arrow {
-  height: 40px;
-  padding-top: 10px;
-  font-size: 45px;
-  line-height: 18px;
-  color: #ffffff;
-  cursor: pointer;
 }
 
 .slider-arrows-item:first-child .arrow-left,
@@ -807,27 +806,39 @@ main.page-catalog {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 36px;
+  bottom: 25px;
   width: 160px;
-  height: 10px;
-  margin-left: -81px;
+  margin-left: -80px;
   text-align: center;
 }
 
+/*переключатели реализованы через псевдоэлементы
+  для увеличения области кликабельностиl*/
 .slider-controls label {
   display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin: 0 3px;
+  padding: 13px 3px;
+  width: 9px;
+  height: 9px;
   vertical-align: top;
-  background-color: #ffffff;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
   cursor: pointer;
 }
 
+.slider-controls label:first-child {
+  padding-left: 13px;
+}
+
 .slider-controls label:last-child {
-  margin-right: 0;
+  padding-right: 13px;
+}
+
+.slider-controls label::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
 }
 
 #toogle-promo-1:checked ~ .slides-promo .slide-promo:nth-child(1),
@@ -835,8 +846,8 @@ main.page-catalog {
   display: block;
 }
 
-#toogle-promo-1:checked ~ .slider-controls label[for="toogle-promo-1"],
-#toogle-promo-2:checked ~ .slider-controls label[for="toogle-promo-2"] {
+#toogle-promo-1:checked ~ .slider-controls label[for="toogle-promo-1"]::before,
+#toogle-promo-2:checked ~ .slider-controls label[for="toogle-promo-2"]::before {
   background-color: #ee3643;
 }
 
