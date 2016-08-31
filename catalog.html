@@ -13,43 +13,43 @@
           <a class="logo" href="index.html">Техномарт</a>
           <form class="search" action="#" method="post">
             <input type="search" placeholder="Поиск:">
-            <button class="btn-search" type="submit"></button>
+            <button class="btn-search icon" type="submit" title="Поиск">Поиск</button>
           </form>
           <div class="user-controls clearfix">
-            <a class="bookmarks" href="#">Закладки: 0</a>
-            <a class="cart cart-full" href="#">Корзина: 10</a>
+            <a class="bookmarks icon" href="#">Закладки: 0</a>
+            <a class="cart icon cart-full" href="#">Корзина: 10</a>
             <a class="order" href="#">Оформить заказ</a>
           </div>
         </div>
       </div>
       <div class="header-bottom">
         <div class="container">
-            <div class="header-bottom-wrapper clearfix">
-              <p class="shop-description">
-                Интернет-магазин<br>
-                строительных материалов<br>
-                и инструментов для ремонта
-              </p>
-              <div class="header-contacts">
-                <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-                <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-              </div>
-              <div class="user-block-active">
-                <a class="user-block-btn" href="#">Равшан Джамшутович</a>
-                <a class="user-block-btn" href="#">Выйти</a>
-                <a class="user-block-link" href="#">Мои заказы</a>
-                <a class="user-block-link" href="#">Личный кабинет</a>
-              </div>
+          <div class="header-bottom-wrapper clearfix">
+            <p class="shop-description">
+              Интернет-магазин<br>
+              строительных материалов<br>
+              и инструментов для ремонта
+            </p>
+            <div class="header-contacts">
+              <a class="phone icon" href="tel:+78125550555">+7 (812) 555-05-55</a>
+              <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
             </div>
-            <nav class="main-menu clearfix">
-              <a href="index.html">Главная</a>
-              <a href="#">Компания</a>
-              <a href="catalog.html">Каталог</a>
-              <a href="#">Новости</a>
-              <a href="#">Спецпредложения</a>
-              <a href="#">Доставка</a>
-              <a href="#">Контакты</a>
-            </nav>
+            <div class="user-block-active">
+              <a class="user-block-btn btn-profile icon" href="#">Равшан Джамшутович</a>
+              <a class="user-block-btn btn-logout icon" href="#">Выйти</a>
+              <a class="user-block-link link-orders" href="#">Мои заказы</a>
+              <a class="user-block-link link-personal" href="#">Личный кабинет</a>
+            </div>
+          </div>
+          <nav class="main-menu clearfix">
+            <a href="index.html">Главная</a>
+            <a href="#">Компания</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="#">Новости</a>
+            <a href="#">Спецпредложения</a>
+            <a href="#">Доставка</a>
+            <a href="#">Контакты</a>
+          </nav>
         </div>
       </div>
     </header>
@@ -57,10 +57,10 @@
     <main class="page-catalog">
       <div class="container">
         <div class="breadcrumbs">
-          <a class="home" href="index.html"></a>
-          <a href="catalog.html">Каталог</a>
-          <a href="#">Инструмент</a>
-          <a class="current">Перфораторы</a>
+          <a class="breadcrumbs-item icon" href="index.html"></a>
+          <a class="breadcrumbs-item icon" href="catalog.html">Каталог</a>
+          <a class="breadcrumbs-item icon" href="#">Инструмент</a>
+          <a class="breadcrumbs-item icon current">Перфораторы</a>
         </div>
         <h1 class="page-title">Перфораторы</h1>
         <div class="catalog clearfix">
@@ -87,23 +87,23 @@
               <div class="filter-block">
                 <h2 class="filter-block-title">Производители:</h2>
                 <input type="checkbox" name="bosch" id="bosch-id" checked>
-                <label for="bosch-id">Bosch</label>
+                <label class="icon" for="bosch-id">Bosch</label>
                 <input type="checkbox" name="interskol" id="interskol-id">
-                <label for="interskol-id">Интерскол</label>
+                <label class="icon" for="interskol-id">Интерскол</label>
                 <input type="checkbox" name="makita" id="makita-id" checked>
-                <label for="makita-id">Makita</label>
+                <label class="icon" for="makita-id">Makita</label>
                 <input type="checkbox" name="dewalt" id="dewalt-id">
-                <label for="dewalt-id">DeWalt</label>
+                <label class="icon" for="dewalt-id">DeWalt</label>
                 <input type="checkbox" name="hitachi" id="hitachi-id">
-                <label for="hitachi-id">Hitachi</label>
+                <label class="icon" for="hitachi-id">Hitachi</label>
               </div>
               <hr class="filter-block-separator">
               <div class="filter-block">
                 <h2 class="filter-block-title block-title-supply">Питание:</h2>
                 <input type="radio" name="power-type-item" id="battery-supply" value="battery supply" checked>
-                <label for="battery-supply">Аккумуляторные</label>
+                <label class="icon" for="battery-supply">Аккумуляторные</label>
                 <input type="radio" name="power-type-item" id="mains-supply" value="mains supply">
-                <label for="mains-supply">Сетевые</label>
+                <label class="icon" for="mains-supply">Сетевые</label>
               </div>
               <button class="btn btn-filter" type="submit">Показать</button>
             </form>
@@ -115,8 +115,8 @@
                   <a class="option option-active" href="#">По цене</a>
                   <a class="option" href="#">По типу</a>
                   <a class="option" href="#">По функционалу</a>
-                  <a class="option dir-up option-active" href="#"></a>
-                  <a class="option dir-down" href="#"></a>
+                  <a class="option dir-up icon option-active" href="#"></a>
+                  <a class="option dir-down icon" href="#"></a>
                 </div>
             </div>
             <article class="products-item">
@@ -262,9 +262,9 @@
             <p>Все права защищены</p>
           </div>
           <div class="footer-socials">
-            <a class="btn btn-social-vk" href="#"></a>
-            <a class="btn btn-social-fb" href="#"></a>
-            <a class="btn btn-social-inst" href="#"></a>
+            <a class="btn btn-social-vk icon" href="#"></a>
+            <a class="btn btn-social-fb icon" href="#"></a>
+            <a class="btn btn-social-inst icon" href="#"></a>
           </div>
           <div class="footer-feedback">
             <p>Обратная связь:</p>
