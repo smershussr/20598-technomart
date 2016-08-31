@@ -1,3 +1,4 @@
+@charset "utf-8";
 /***************************** ШРИФТЫ *****************************/
 
 @font-face {
@@ -66,7 +67,7 @@
     url(../fonts/ptsansbold.woff) format("woff");
 }
 
-/***************************** ИКОНОЧНЫЙ ШРИФТ *****************************/
+/******* ИКОНОЧНЫЙ ШРИФТ *******/
 
 @font-face {
   font-family: "symbols-technomart";
@@ -75,24 +76,6 @@
   src:
     url("../fonts/symbols-technomart.woff2") format("woff2"),
     url("../fonts/symbols-technomart.woff") format("woff");
-}
-
-.icon::before,
-.icon::after {
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
-  font-family: "symbols-technomart";
-  font-weight: normal;
-  font-style: normal;
-  /*line-height: 18px;*/
-  text-align: center;
-  vertical-align: top;
-  text-transform: none;
-  text-decoration: inherit;
-  font-variant: normal;
-  speak: none;
 }
 
 /***************************** СТИЛИ СТРАНИЦ *****************************/
@@ -108,6 +91,24 @@
   color: #000000;
   background-color: #ffffff;
 }
+
+.icon::before,
+.icon::after {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+  font-family: "symbols-technomart";
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  vertical-align: top;
+  text-transform: none;
+  text-decoration: inherit;
+  font-variant: normal;
+  speak: none;
+}
+
 
 img {
   width: 100%;
@@ -195,7 +196,7 @@ form.search {
   opacity: 0.3;
 }
 
-.btn-search.icon::before {
+.btn-search::before {
   content: "🔍";
   font-size: 17px;
 } /* "\1f50d" */
@@ -431,6 +432,7 @@ input[type="search"]:focus:-ms-input-placeholder {
   display: inline-block;
   box-sizing: border-box;
   min-height: 45px;
+  padding: 13px 20px;
   font-size: 21px;
   line-height: 18px;
   text-align: center;
@@ -440,23 +442,33 @@ input[type="search"]:focus:-ms-input-placeholder {
   background-color: #ffffff;
 }
 
-.user-block .btn-login {
-  width: 121px;
+.user-block .user-block-btn {
   margin-right: 10px;
-  padding: 13px 20px 13px 41px;
 }
+
+.user-block .user-block-btn:last-child {
+  margin-right: 0;
+}
+
+/*Оставил закомментированным, если вдруг проверяющий потребует Pixel Perfect*/
+/*.user-block .btn-login {
+  width: 121px;
+  padding: 13px 20px 13px 41px;
+}*/
 
 .user-block .btn-register {
   width: 150px;
   margin-right: 0;
-  padding: 13px 20px;
 }
 
 .user-block .btn-login.icon::before {
   content: "\2386";
-  position: absolute;
+  /*Оставил закомментированным, если вдруг проверяющий потребует Pixel Perfect*/
+  /*position: absolute;
   top: 13px;
-  left: 10px;
+  left: 10px;*/
+  margin-left: -4px;
+  margin-right: 14px;
   font-size: 22px;
   color: #c5c5c5;
 }
@@ -508,7 +520,7 @@ input[type="search"]:focus:-ms-input-placeholder {
 }
 
 .user-block-active .link-personal::before {
-    content: " ";
+    content: "";
     position: absolute;
     top: 15px;
     left: -17px;
@@ -803,12 +815,12 @@ main.page-catalog {
 }
 
 .slider-controls {
-  content: "";
   position: absolute;
   left: 50%;
   bottom: 25px;
   width: 160px;
   margin-left: -80px;
+  font-size: 0;
   text-align: center;
 }
 
@@ -816,7 +828,7 @@ main.page-catalog {
   для увеличения области кликабельностиl*/
 .slider-controls label {
   display: inline-block;
-  padding: 13px 3px;
+  padding: 13px 5px;
   width: 9px;
   height: 9px;
   vertical-align: top;
@@ -1439,7 +1451,8 @@ main.page-catalog {
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
-  cursor: pointer;
+  cursor: move;
+  cursor: grab;
 }
 
 .range-controls .min-toggle {
