@@ -1386,6 +1386,14 @@ main.page-catalog {
   color: #000000;
 }
 
+.breadcrumbs a:not(.current):hover {
+  color: #ee3643;
+}
+
+.breadcrumbs a:not(.current):active {
+  color: #000000;
+}
+
 .breadcrumbs a::after {
   content: "\3e";
   position: absolute;
@@ -1404,6 +1412,14 @@ main.page-catalog {
   left: -3px;
   font-size: 16px;
   line-height: 20px;
+  color: #c1c6ce;
+}
+
+.breadcrumbs .home:hover::before {
+  color: #32425c;
+}
+
+.breadcrumbs .home:active::before {
   color: #c1c6ce;
 }
 
@@ -1830,6 +1846,16 @@ input[type="radio"]:disabled + label::before {
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;
   cursor: pointer;
+}
+
+.page-footer .logo:hover {
+  background-color: #ca2c37;
+  box-shadow: 0 5px 0 0 #9a212a;
+}
+
+.page-footer .logo:active {
+  background-color: #ba2732;
+  box-shadow: 0 5px 0 0 #8e1e26;
 }
 
 .footer-contacts {
