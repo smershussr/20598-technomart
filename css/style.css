@@ -222,7 +222,7 @@ form.search {
 .btn-search::before {
   content: "🔍";
   font-size: 17px;
-} /* "\1f50d" */
+}
 
 input[type="search"] {
   width: 270px;
@@ -336,7 +336,7 @@ input[type="search"]:focus:-ms-input-placeholder {
 }
 
 .cart::before {
-  content: "\62";
+  content: "b";
   position: absolute;
   top: 12px;
   left: 12px;
@@ -486,7 +486,7 @@ input[type="search"]:focus:-ms-input-placeholder {
 }
 
 .user-block .btn-login::before {
-  content: "\2386";
+  content: "⎆";
   /*Оставил закомментированным, если вдруг проверяющий потребует Pixel Perfect*/
   /*position: absolute;
   top: 13px;
@@ -517,7 +517,7 @@ input[type="search"]:focus:-ms-input-placeholder {
 }
 
 .user-block-active .btn-logout::before {
-  content: "\241b";
+  content: "␛";
   position: absolute;
   top: 13px;
   left: 6px;
@@ -802,7 +802,7 @@ main.page-catalog {
 }
 
 .slider-arrows .arrow-left::before {
-  content: "\3c"; /* "<" */
+  content: "<";
 }
 
 .slider-arrows .arrow-right {
@@ -810,7 +810,7 @@ main.page-catalog {
 }
 
 .slider-arrows .arrow-right::before {
-   content: "\3e"; /* ">" */
+   content: ">";
 }
 
 .slider-arrows-item:first-child .arrow-left,
@@ -980,7 +980,7 @@ main.page-catalog {
 }
 
 .actions .btn-buy::before {
-  content: "\62";
+  content: "b";
   position: absolute;
   top: 10px;
   left: 8px;
@@ -1345,7 +1345,7 @@ main.page-catalog {
 }
 
 .breadcrumbs-item::after {
-  content: "\3e";
+  content: ">";
   position: absolute;
   top: -2px;
   right: -31px;
@@ -1572,7 +1572,7 @@ input[type="radio"] + label {
 }
 
 input[type="checkbox"] + label::before {
-  content: "\2610";
+  content: "☐";
   position: absolute;
   top: 2px;
   left: -7px;
@@ -1581,12 +1581,12 @@ input[type="checkbox"] + label::before {
 }
 
 input[type="checkbox"]:checked + label::before {
-  content: "\2611";
+  content: "☑";
   left: -5px;
 }
 
 input[type="radio"] + label::before {
-  content: "\25cb";
+  content: "○";
   position: absolute;
   top: 1px;
   left: -7px;
@@ -1595,7 +1595,7 @@ input[type="radio"] + label::before {
 }
 
 input[type="radio"]:checked + label::before {
-  content: "\25cf";
+  content: "●";
   left: -7px;
 }
 
@@ -1689,7 +1689,7 @@ input[type="radio"]:disabled + label::before {
 }
 
 .sorting-options .icon::before {
-  content: "\25b2";
+  content: "▲";
   position: absolute;
   top: 9px;
   right: 37px;
@@ -1698,7 +1698,7 @@ input[type="radio"]:disabled + label::before {
 }
 
 .sorting-options .dir-down::before {
-  content: "\25bc";
+  content: "▼";
   right: 6px;
 }
 
@@ -1931,16 +1931,16 @@ input[type="radio"]:disabled + label::before {
 }
 
 .btn-social-vk::before {
-  content: "\76";
-} /* "v" */
+  content: "v";
+}
 
 .btn-social-fb::before {
-  content: "\66";
-} /* "f" */
+  content: "f";
+}
 
 .btn-social-inst::before {
   content: "📷";
-  } /* "\1f4f7" */
+  }
 
 .footer-feedback {
   float: left;
