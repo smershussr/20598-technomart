@@ -308,7 +308,7 @@ input[type="search"]:focus:-ms-input-placeholder {
   padding-right: 10px;
 }
 
-.bookmarks.icon::before {
+.bookmarks::before {
   content: "🔖";
   position: absolute;
   top: 12px;
@@ -324,7 +324,7 @@ input[type="search"]:focus:-ms-input-placeholder {
   padding-right: 10px;
 }
 
-.cart.icon::before {
+.cart::before {
   content: "\62";
   position: absolute;
   top: 12px;
@@ -414,7 +414,7 @@ input[type="search"]:focus:-ms-input-placeholder {
   cursor: default;
 }
 
-.phone.icon::before {
+.phone::before {
   content: "📞";
   position: absolute;
   top: 11px;
@@ -474,7 +474,7 @@ input[type="search"]:focus:-ms-input-placeholder {
   margin-right: 0;
 }
 
-.user-block .btn-login.icon::before {
+.user-block .btn-login::before {
   content: "\2386";
   /*Оставил закомментированным, если вдруг проверяющий потребует Pixel Perfect*/
   /*position: absolute;
@@ -491,7 +491,7 @@ input[type="search"]:focus:-ms-input-placeholder {
   padding: 13px 16px 14px 36px;
 }
 
-.user-block-active .btn-profile.icon::before {
+.user-block-active .btn-profile::before {
   content: "👨";
   position: absolute;
   top: 13px;
@@ -505,7 +505,7 @@ input[type="search"]:focus:-ms-input-placeholder {
   font-size: 0;
 }
 
-.user-block-active .btn-logout.icon::before {
+.user-block-active .btn-logout::before {
   content: "\241b";
   position: absolute;
   top: 13px;
@@ -790,7 +790,7 @@ main.page-catalog {
   float: left;
 }
 
-.slider-arrows .arrow-left.icon::before {
+.slider-arrows .arrow-left::before {
   content: "\3c"; /* "<" */
 }
 
@@ -798,7 +798,7 @@ main.page-catalog {
   float: right;
 }
 
-.slider-arrows .arrow-right.icon::before {
+.slider-arrows .arrow-right::before {
    content: "\3e"; /* ">" */
 }
 
@@ -966,7 +966,7 @@ main.page-catalog {
   box-shadow: none;
 }
 
-.actions .btn-buy.icon::before {
+.actions .btn-buy::before {
   content: "\62";
   position: absolute;
   top: 10px;
@@ -1331,7 +1331,7 @@ main.page-catalog {
   color: #000000;
 }
 
-.breadcrumbs-item.icon::after {
+.breadcrumbs-item::after {
   content: "\3e";
   position: absolute;
   top: -2px;
@@ -1342,11 +1342,11 @@ main.page-catalog {
   pointer-events: none
 }
 
-.breadcrumbs-item:first-child.icon::after {
+.breadcrumbs-item:first-child::after {
   top: -16px;
 }
 
-.breadcrumbs-item:first-child.icon::before {
+.breadcrumbs-item:first-child::before {
   content: "🏠";
   position: absolute;
   top: -2;
@@ -1560,7 +1560,7 @@ input[type="radio"] + label {
   font-size: 14px;
 }
 
-input[type="checkbox"] + label.icon::before {
+input[type="checkbox"] + label::before {
   content: "\2610";
   position: absolute;
   top: 2px;
@@ -1569,12 +1569,12 @@ input[type="checkbox"] + label.icon::before {
   color: #c1c1c1;
 }
 
-input[type="checkbox"]:checked + label.icon::before {
+input[type="checkbox"]:checked + label::before {
   content: "\2611";
   left: -5px;
 }
 
-input[type="radio"] + label.icon::before {
+input[type="radio"] + label::before {
   content: "\25cb";
   position: absolute;
   top: 1px;
@@ -1583,7 +1583,7 @@ input[type="radio"] + label.icon::before {
   color: #c1c1c1;
 }
 
-input[type="radio"]:checked + label.icon::before {
+input[type="radio"]:checked + label::before {
   content: "\25cf";
   left: -7px;
 }
@@ -1686,7 +1686,7 @@ input[type="radio"]:disabled + label::before {
   line-height: 20px;
 }
 
-.dir-down.icon::before {
+.sorting-options .dir-down::before {
   content: "\25bc";
   right: 6px;
 }
@@ -1916,15 +1916,15 @@ input[type="radio"]:disabled + label::before {
   background-color: #ee3643;
 }
 
-.btn-social-vk.icon::before {
+.btn-social-vk::before {
   content: "\76";
 } /* "v" */
 
-.btn-social-fb.icon::before {
+.btn-social-fb::before {
   content: "\66";
 } /* "f" */
 
-.btn-social-inst.icon::before {
+.btn-social-inst::before {
   content: "📷";
   } /* "\1f4f7" */
 
