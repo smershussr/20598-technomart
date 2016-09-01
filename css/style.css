@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /***************************** ШРИФТЫ *****************************/
 
 @font-face {
@@ -1734,7 +1735,7 @@ input[type="radio"]:disabled + label::before {
   pointer-events: none;
 }
 
-.catalog-paginator .btn-paginator-next {
+.catalog-paginator .btn-paginator {
   padding: 10px 28px;
 }
 
