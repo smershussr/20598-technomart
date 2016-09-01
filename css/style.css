@@ -1425,7 +1425,6 @@ main.page-catalog {
 }
 
 .range-controls {
-  position: relative;
   height: 41px;
   margin-bottom: 9px;
   padding: 39px 20px 39px 25px;
@@ -1436,6 +1435,8 @@ main.page-catalog {
 }
 
 .range-controls .scale {
+  outline: 1px solid green;
+  position: relative;
   height: 2px;
   background: #d7dcde;
 }
@@ -1448,10 +1449,11 @@ main.page-catalog {
 
 .range-controls .toggle {
   position: absolute;
-  top: 30px;
+  top: -10px;
   left: 0;
   width: 4px;
   height: 4px;
+  margin-left: -10px;
   background-color: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -1461,11 +1463,11 @@ main.page-catalog {
 }
 
 .range-controls .min-toggle {
-  left: 20px;
+  left: 3%;
 }
 
 .range-controls .max-toggle {
-  left: 160px;
+  left: 83%;
 }
 
 .price-controls {
