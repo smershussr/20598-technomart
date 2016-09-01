@@ -1307,6 +1307,7 @@ main.page-catalog {
 
 .image-map {
   margin-bottom: 32px;
+  cursor: pointer;
 }
 
 /********* КАТАЛОГ *********/
