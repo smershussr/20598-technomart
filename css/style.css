@@ -1435,7 +1435,6 @@ main.page-catalog {
 }
 
 .range-controls .scale {
-  outline: 1px solid green;
   position: relative;
   height: 2px;
   background: #d7dcde;
