@@ -414,7 +414,7 @@ input[type="search"]:focus:-ms-input-placeholder {
   cursor: default;
 }
 
-.phone::before {
+.phone.icon::before {
   content: "📞";
   position: absolute;
   top: 11px;
