@@ -108,9 +108,12 @@
   text-decoration: inherit;
   font-variant: normal;
   speak: none;
+  -webkit-transition-property: color, opacity;
   transition-property: color, opacity;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 
@@ -148,9 +151,12 @@ img {
   border-radius: 3px;
   outline: none;
   cursor: pointer;
+  -webkit-transition-property: color, background-color, border-color, opacity;
   transition-property: color, background-color, border-color, opacity;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .btn:hover {
@@ -181,9 +187,12 @@ img {
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;
   cursor: pointer;
+  -webkit-transition-property: background-color, border-color;
   transition-property: background-color, border-color;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .header-top .logo:hover {
@@ -216,6 +225,7 @@ form.search {
   outline: none;
   cursor: pointer;
   opacity: 0.3;
+  -webkit-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
 }
 
@@ -310,6 +320,7 @@ input[type="search"]:focus:-ms-input-placeholder {
   text-align: left;
   text-decoration: none;
   color: #ffffff;
+  -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
 
@@ -1470,6 +1481,7 @@ main.page-catalog {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: move;
+  cursor: -webkit-grab;
   cursor: grab;
 }
 
@@ -1812,9 +1824,12 @@ input[type="radio"]:disabled + label::before {
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;
   cursor: pointer;
+  -webkit-transition-property: background-color, border-color;
   transition-property: background-color, border-color;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .page-footer .logo:hover {
@@ -1976,30 +1991,71 @@ input[type="radio"]:disabled + label::before {
 
 /***************************** МОДАЛЬНЫЕ ОКНА *****************************/
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0%   {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
   70%  {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   90%  {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70%  {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 @keyframes shake {
   0%, 100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
@@ -2236,11 +2292,13 @@ input[type="radio"]:disabled + label::before {
 
 .modal-show {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .modal-close {
@@ -2277,9 +2335,11 @@ input[type="radio"]:disabled + label::before {
 }
 
 .modal-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .modal-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
