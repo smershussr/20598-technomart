@@ -1976,6 +1976,33 @@ input[type="radio"]:disabled + label::before {
 
 /***************************** МОДАЛЬНЫЕ ОКНА *****************************/
 
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -1987,37 +2014,7 @@ input[type="radio"]:disabled + label::before {
   background: rgba(0, 0, 0, 0);
 }
 
-.modal-close {
-  position: absolute;
-  top: 9px;
-  right: 10px;
-  width: 22px;
-  height: 22px;
-  font-size: 0;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
 
-.modal-close::before,
-.modal-close::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 0;
-  width: 25px;
-  height: 5px;
-  background-color: #ee3643;
-}
-
-.modal-close::before {
-  transform: rotate(45deg);
-}
-
-.modal-close::after {
-  transform: rotate(-45deg);
-}
 
 /********* КАРТА *********/
 
@@ -2031,7 +2028,6 @@ input[type="radio"]:disabled + label::before {
   height: 446px;
   margin-top: -223px;
   margin-left: -470px;
-  background: #444444 url("../img/map.png");
   box-shadow: 0px 0px 16px 2px rgba(35, 31, 32, 0.5);
 }
 
@@ -2234,4 +2230,56 @@ input[type="radio"]:disabled + label::before {
 .modal-add-cart .btn-cancel:active {
   background-color: #ffffff;
   opacity: 0.5;
+}
+
+/********* СОБЫТИЯ МОДАЛЬНЫХ ФОРМ *********/
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.modal-close {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  z-index: 25;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Вынужден был сместить крестик закрытия за пределы формы,
+   т.к. на интерактивной карте Яндекса есть кнопка на месте,
+   в котором, согласно макету, должен располагаться крестик */
+.modal-map .modal-close {
+  top: 0px;
+  right: -30px;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 25px;
+  height: 5px;
+  background-color: #ee3643;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }
