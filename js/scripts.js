@@ -23,12 +23,6 @@ if (modalWriteUs) {
       yourNameField.value = storageUsername;
       emailField.value = storageEmail;
       messageField.focus();
-    } else if (storageUsername && !storageEmail) {
-      yourNameField.value = storageUsername;
-      emailField.focus();
-    } else if (!storageUsername && storageEmail) {
-      emailField.value = storageEmail;
-      yourNameField.focus();
     } else {
       yourNameField.focus();
     }
@@ -42,7 +36,7 @@ if (modalWriteUs) {
   });
 
   formWriteUs.addEventListener("submit", function(event) {
-    if (!yourNameField || !emailField) {
+    if (!yourNameField.value || !emailField.value) {
       event.preventDefault();
       modalWriteUs.classList.remove("modal-error");
       modalWriteUs.offsetWidth = modalWriteUs.offsetWidth;
