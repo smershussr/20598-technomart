@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Главная&nbsp;&mdash; Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -118,8 +118,8 @@
           <div class="products-list clearfix">
             <article class="products-item">
               <div class="actions">
-                  <a href="#" class="btn btn-buy icon">Купить</a>
-                  <a href="#" class="btn btn-bookmark">В&nbsp;закладки</a>
+                  <a class="btn btn-buy icon" href="add-cart.html">Купить</a>
+                  <a class="btn btn-bookmark" href="#">В&nbsp;закладки</a>
               </div>
               <img src="img/product-item-1.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 9000">
               <h2 class="title">Перфоратор BOSCH BFG 9000</h2>
@@ -128,8 +128,8 @@
             </article>
             <article class="products-item">
               <div class="actions">
-                  <a href="#" class="btn btn-buy icon">Купить</a>
-                  <a href="#" class="btn btn-bookmark">В&nbsp;закладки</a>
+                  <a class="btn btn-buy icon" href="add-cart.html">Купить</a>
+                  <a class="btn btn-bookmark" href="#">В&nbsp;закладки</a>
               </div>
               <img src="img/product-item-2.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 3000">
               <h2 class="title">Перфоратор BOSCH BFG 3000</h2>
@@ -138,8 +138,8 @@
             </article>
             <article class="products-item">
               <div class="actions">
-                  <a href="#" class="btn btn-buy icon">Купить</a>
-                  <a href="#" class="btn btn-bookmark">В&nbsp;закладки</a>
+                  <a class="btn btn-buy icon" href="add-cart.html">Купить</a>
+                  <a class="btn btn-bookmark" href="#">В&nbsp;закладки</a>
               </div>
               <img src="img/product-item-3.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 6000">
               <h2 class="title">Перфоратор BOSCH BFG 6000</h2>
@@ -148,8 +148,8 @@
             </article>
             <article class="products-item flag-new">
               <div class="actions">
-                  <a href="#" class="btn btn-buy icon">Купить</a>
-                  <a href="#" class="btn btn-bookmark">В&nbsp;закладки</a>
+                  <a class="btn btn-buy icon" href="add-cart.html">Купить</a>
+                  <a class="btn btn-bookmark" href="#">В&nbsp;закладки</a>
               </div>
               <img src="img/product-item-2.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 2000">
               <h2 class="title">Перфоратор BOSCH BFG 2000</h2>
@@ -250,10 +250,10 @@
               Вы&nbsp;можете забрать товар сами,<br>
               заехав в&nbsp;наш офис.
             </p>
-            <a href="#" class="image-map">
+            <a class="image-map" href="https://yandex.ru/maps/-/CZuviXyX" target="_blank">
               <img src="img/small-map.jpg" width="300" height="150" alt="Миникарта">
             </a>
-            <a class="btn btn-write-us" href="#">Заблудились? Напишите нам!</a>
+            <a class="btn btn-write-us" href="write-us.html">Заблудились? Напишите нам!</a>
           </div>
         </section>
       </div>
@@ -342,14 +342,15 @@
 
     <div class="modal-add-cart">
       <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
-      <form class="add-cart" action="#" method="post">
-        <div class="notification">Товар добавлен в&nbsp;корзину!</div>
-        <div class="modal-footer">
-          <a class="btn btn-order" href="#">Оформить заказ</a>
-          <button class="btn btn-cancel" type="button" title="Продолжить покупки">Продолжить покупки</button>
-        </div>
-      </form>
+      <div class="notification">Товар добавлен в&nbsp;корзину!</div>
+      <div class="modal-footer">
+        <a class="btn btn-order" href="#">Оформить заказ</a>
+        <button class="btn btn-cancel" type="button" title="Продолжить покупки">Продолжить покупки</button>
+      </div>
     </div>
+
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=9QUktR1wD56JlSIfVOVlY-_vQULXT7fa&amp;width=940&amp;height=446&id=yandex-map&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+    <script src="js/script.min.js"></script>
 
   </body>
 </html>

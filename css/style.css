@@ -108,11 +108,13 @@
   text-decoration: inherit;
   font-variant: normal;
   speak: none;
-  transition-property: color, opacity;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  -webkit-transition-property: color, opacity;
+          transition-property: color, opacity;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
-
 
 img {
   width: 100%;
@@ -148,9 +150,12 @@ img {
   border-radius: 3px;
   outline: none;
   cursor: pointer;
-  transition-property: color, background-color, border-color, opacity;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  -webkit-transition-property: color, background-color, border-color, opacity;
+          transition-property: color, background-color, border-color, opacity;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .btn:hover {
@@ -181,9 +186,12 @@ img {
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;
   cursor: pointer;
-  transition-property: background-color, border-color;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  -webkit-transition-property: background-color, border-color;
+          transition-property: background-color, border-color;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .header-top .logo:hover {
@@ -216,7 +224,8 @@ form.search {
   outline: none;
   cursor: pointer;
   opacity: 0.3;
-  transition: opacity 0.2s ease;
+  -webkit-transition: opacity 0.2s ease;
+          transition: opacity 0.2s ease;
 }
 
 .btn-search::before {
@@ -239,16 +248,16 @@ input[type="search"] {
 }
 
 input[type="search"]::-webkit-input-placeholder {
-  color:#ffffff;
+  color: #ffffff;
 }
 
 input[type="search"]::-moz-placeholder { /* Firefox 19+ */
-  color:#ffffff;
+  color: #ffffff;
   opacity: 1;
 }
 
 input[type="search"]:-ms-input-placeholder {
-  color:#ffffff;
+  color: #ffffff;
 }
 
 input[type="search"]:hover + .btn-search,
@@ -310,7 +319,8 @@ input[type="search"]:focus:-ms-input-placeholder {
   text-align: left;
   text-decoration: none;
   color: #ffffff;
-  transition: background-color 0.2s ease;
+  -webkit-transition: background-color 0.2s ease;
+          transition: background-color 0.2s ease;
 }
 
 .bookmarks {
@@ -464,6 +474,12 @@ input[type="search"]:focus:-ms-input-placeholder {
   text-decoration: none;
   color: #000000;
   background-color: #ffffff;
+  -webkit-transition-property: color, opacity;
+          transition-property: color, opacity;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .user-block .user-block-btn {
@@ -533,6 +549,12 @@ input[type="search"]:focus:-ms-input-placeholder {
   line-height: 18px;
   vertical-align: top;
   color: #32425c;
+  -webkit-transition-property: color, opacity;
+          transition-property: color, opacity;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .user-block-active .link-orders {
@@ -598,6 +620,12 @@ input[type="search"]:focus:-ms-input-placeholder {
   vertical-align: top;
   text-decoration: none;
   color: #ffffff;
+  -webkit-transition-property: background-color, box-shadow, opacity;
+          transition-property: background-color, box-shadow, opacity;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .main-menu a:hover {
@@ -617,7 +645,7 @@ main {
 }
 
 main.page-catalog {
-  padding:0;
+  padding: 0;
 }
 
 .promo-block {
@@ -778,7 +806,7 @@ main.page-catalog {
   display: none;
   margin: 0;
   padding: 0;
-  border:none;
+  border: none;
   outline: none;
 }
 
@@ -880,7 +908,7 @@ main.page-catalog {
 }
 
 .popular-products {
-  margin-bottom: 21px;
+  margin-bottom: 1px;
 }
 
 .popular-products .title-block,
@@ -921,11 +949,14 @@ main.page-catalog {
   float: left;
   width: 218px;
   margin-right: 20px;
+  margin-bottom: 20px;
   font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-weight: bold;
   text-align: center;
   border: 1px solid #e5e5e5;
   overflow: hidden;
+  -webkit-transition: box-shadow 0.2s ease;
+          transition: box-shadow 0.2s ease;
 }
 
 .products-item + .flag-new::after {
@@ -933,7 +964,7 @@ main.page-catalog {
   right: -22px;
 }
 
-.products-item:last-child {
+.products-item:nth-child(4n+4) {
   margin-right: 0;
 }
 
@@ -961,8 +992,6 @@ main.page-catalog {
   padding-left: 0;
   padding-right: 0;
   background-color: #63a63e;
-  /*border-radius: 3px;*/
-
 }
 
 .actions .btn-buy {
@@ -1078,6 +1107,12 @@ main.page-catalog {
   margin-right: 20px;
   margin-bottom: 20px;
   border: 1px solid #e4e4e4;
+  -webkit-transition-property: opacity, box-shadow;
+          transition-property: opacity, box-shadow;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .brands-list .brands-item:nth-child(4n) {
@@ -1142,7 +1177,7 @@ main.page-catalog {
   display: none;
   margin: 0;
   padding: 0;
-  border:none;
+  border: none;
   outline: none;
 }
 
@@ -1175,6 +1210,8 @@ main.page-catalog {
   border-top: 1px solid #405069;
   border-bottom: 1px solid #293449;
   cursor: pointer;
+  -webkit-transition: background-color 0.2s ease;
+          transition: background-color 0.2s ease;
 }
 
 .slider-menu label:hover {
@@ -1335,6 +1372,8 @@ main.page-catalog {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  -webkit-transition: color 0.2s ease;
+          transition: color 0.2s ease;
 }
 
 .breadcrumbs-item:not(.current):hover {
@@ -1353,7 +1392,7 @@ main.page-catalog {
   font-size: 14px;
   line-height: 20px;
   color: #c1c6ce;
-  pointer-events: none
+  pointer-events: none;
 }
 
 .breadcrumbs-item:first-child::after {
@@ -1470,6 +1509,7 @@ main.page-catalog {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: move;
+  cursor: -webkit-grab;
   cursor: grab;
 }
 
@@ -1517,44 +1557,27 @@ main.page-catalog {
   background-color: #444444;
 }
 
-.filter-block-separator {
-  height: 1px;
-  color: #e5e5e5;
-  background-color: #e5e5e5;
-  border: none;
-}
-
-.filter-block-separator:first-of-type {
-  margin-bottom: 16px;
-}
-
-.filter-block-separator:first-of-type + .filter-block {
-  margin-bottom: 22px;
+.filter-block {
+  padding-top: 16px;
+  padding-bottom: 2px;
+  border-top: 1px solid #e5e5e5;
 }
 
 .filter-block-title {
   margin-bottom: 14px;
 }
 
-.filter-block-separator:last-of-type {
-  margin-bottom: 17px;
-}
-
 .filter-block .block-title-supply {
   letter-spacing: 0.01em;
 }
 
-.filter-block-separator:last-of-type + .filter-block {
-  margin-bottom: 78px;
-}
-
 input[type="checkbox"],
 input[type="radio"] {
+  display: none;
   margin: 0;
   padding: 0;
-  border:none;
+  border: none;
   outline: none;
-  display: none;
 }
 
 input[type="checkbox"] + label,
@@ -1621,6 +1644,7 @@ input[type="radio"]:disabled + label::before {
 .catalog-filters .btn-filter {
   width: 140px;
   height: 38px;
+  margin-top: 57px;
   font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-size: 13px;
   color: #000000;
@@ -1672,6 +1696,12 @@ input[type="radio"]:disabled + label::before {
   color: #000000;
   border-bottom: 1px dotted #ee3643;
   opacity: 0.3;
+  -webkit-transition-property: border, opacity;
+          transition-property: border, opacity;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .sorting-options .option:first-child {
@@ -1720,7 +1750,7 @@ input[type="radio"]:disabled + label::before {
   pointer-events: none;
 }
 
-.products .products-item {
+.products-items .products-item {
     float: left;
     width: 218px;
     min-height: 316px;
@@ -1729,7 +1759,7 @@ input[type="radio"]:disabled + label::before {
     border: 1px solid #c5c5c5;
 }
 
-.products .products-item:nth-of-type(3n+3) {
+.products-items .products-item:nth-child(3n+3) {
     margin-right: 0;
 }
 
@@ -1770,21 +1800,14 @@ input[type="radio"]:disabled + label::before {
 
 .products-about {
   padding-top: 68px;
-  padding-bottom: 39px;
+  padding-bottom: 67px;
   background-color: #f2f6f8;
 }
 
 .about-description {
   margin: 0;
-  margin-bottom: -15px;
   padding: 0;
   font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-}
-
-.about-description:last-child {
-  margin-bottom: 30px;
 }
 
 /***************************** ФУТЕР *****************************/
@@ -1812,9 +1835,12 @@ input[type="radio"]:disabled + label::before {
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;
   cursor: pointer;
-  transition-property: background-color, border-color;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  -webkit-transition-property: background-color, border-color;
+          transition-property: background-color, border-color;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .page-footer .logo:hover {
@@ -1868,7 +1894,7 @@ input[type="radio"]:disabled + label::before {
   padding: 17px 30px;
   font-size: 18px;
   line-height: 24px;
-  vertical-align:top;
+  vertical-align: top;
   text-decoration: none;
   color: #f1f5f7;
 }
@@ -1976,6 +2002,74 @@ input[type="radio"]:disabled + label::before {
 
 /***************************** МОДАЛЬНЫЕ ОКНА *****************************/
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -1987,37 +2081,7 @@ input[type="radio"]:disabled + label::before {
   background: rgba(0, 0, 0, 0);
 }
 
-.modal-close {
-  position: absolute;
-  top: 9px;
-  right: 10px;
-  width: 22px;
-  height: 22px;
-  font-size: 0;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
 
-.modal-close::before,
-.modal-close::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 0;
-  width: 25px;
-  height: 5px;
-  background-color: #ee3643;
-}
-
-.modal-close::before {
-  transform: rotate(45deg);
-}
-
-.modal-close::after {
-  transform: rotate(-45deg);
-}
 
 /********* КАРТА *********/
 
@@ -2031,7 +2095,6 @@ input[type="radio"]:disabled + label::before {
   height: 446px;
   margin-top: -223px;
   margin-left: -470px;
-  background: #444444 url("../img/map.png");
   box-shadow: 0px 0px 16px 2px rgba(35, 31, 32, 0.5);
 }
 
@@ -2086,19 +2149,21 @@ input[type="radio"]:disabled + label::before {
   border: 2px solid #d7dcde;
   border-radius: 3px;
   outline: none;
+  -webkit-transition: border-color 0.2s ease;
+          transition: border-color 0.2s ease;
 }
 
 .modal-write-us input[type="text"]::-webkit-input-placeholder {
-  color:#999999;
+  color: #999999;
 }
 
 .modal-write-us input[type="text"]::-moz-placeholder { /* Firefox 19+ */
-  color:#999999;
+  color: #999999;
   opacity: 1;
 }
 
 .modal-write-us input[type="text"]:-ms-input-placeholder {
-  color:#999999;
+  color: #999999;
 }
 
 .modal-write-us input[type="text"]:focus::-webkit-input-placeholder {
@@ -2124,16 +2189,16 @@ input[type="radio"]:disabled + label::before {
 }
 
 .modal-write-us textarea::-webkit-input-placeholder {
-  color:#999999;
+  color: #999999;
 }
 
 .modal-write-us textarea::-moz-placeholder { /* Firefox 19+ */
-  color:#999999;
+  color: #999999;
   opacity: 1;
 }
 
 .modal-write-us textarea:-ms-input-placeholder {
-  color:#999999;
+  color: #999999;
 }
 
 .modal-write-us textarea:focus::-webkit-input-placeholder {
@@ -2234,4 +2299,60 @@ input[type="radio"]:disabled + label::before {
 .modal-add-cart .btn-cancel:active {
   background-color: #ffffff;
   opacity: 0.5;
+}
+
+/********* СОБЫТИЯ МОДАЛЬНЫХ ФОРМ *********/
+
+.modal-show {
+  display: block;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
+}
+
+.modal-error {
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
+}
+
+.modal-close {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  z-index: 25;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Вынужден был сместить крестик закрытия за пределы формы,
+   т.к. на интерактивной карте Яндекса есть кнопка на месте,
+   в котором, согласно макету, должен располагаться крестик */
+.modal-map .modal-close {
+  top: 0px;
+  right: -30px;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 25px;
+  height: 5px;
+  background-color: #ee3643;
+}
+
+.modal-close::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal-close::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
