@@ -116,7 +116,6 @@
           transition-timing-function: ease;
 }
 
-
 img {
   width: 100%;
   height: auto;
@@ -249,16 +248,16 @@ input[type="search"] {
 }
 
 input[type="search"]::-webkit-input-placeholder {
-  color:#ffffff;
+  color: #ffffff;
 }
 
 input[type="search"]::-moz-placeholder { /* Firefox 19+ */
-  color:#ffffff;
+  color: #ffffff;
   opacity: 1;
 }
 
 input[type="search"]:-ms-input-placeholder {
-  color:#ffffff;
+  color: #ffffff;
 }
 
 input[type="search"]:hover + .btn-search,
@@ -646,7 +645,7 @@ main {
 }
 
 main.page-catalog {
-  padding:0;
+  padding: 0;
 }
 
 .promo-block {
@@ -807,7 +806,7 @@ main.page-catalog {
   display: none;
   margin: 0;
   padding: 0;
-  border:none;
+  border: none;
   outline: none;
 }
 
@@ -1177,7 +1176,7 @@ main.page-catalog {
   display: none;
   margin: 0;
   padding: 0;
-  border:none;
+  border: none;
   outline: none;
 }
 
@@ -1573,11 +1572,11 @@ main.page-catalog {
 
 input[type="checkbox"],
 input[type="radio"] {
+  display: none;
   margin: 0;
   padding: 0;
-  border:none;
+  border: none;
   outline: none;
-  display: none;
 }
 
 input[type="checkbox"] + label,
@@ -1836,7 +1835,7 @@ input[type="radio"]:disabled + label::before {
   box-shadow: 0 5px 0 0 #b52933;
   cursor: pointer;
   -webkit-transition-property: background-color, border-color;
-  transition-property: background-color, border-color;
+          transition-property: background-color, border-color;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
   -webkit-transition-timing-function: ease;
@@ -1894,7 +1893,7 @@ input[type="radio"]:disabled + label::before {
   padding: 17px 30px;
   font-size: 18px;
   line-height: 24px;
-  vertical-align:top;
+  vertical-align: top;
   text-decoration: none;
   color: #f1f5f7;
 }
@@ -2003,15 +2002,15 @@ input[type="radio"]:disabled + label::before {
 /***************************** МОДАЛЬНЫЕ ОКНА *****************************/
 
 @-webkit-keyframes bounce {
-  0%   {
+  0% {
     -webkit-transform: translateY(-2000px);
             transform: translateY(-2000px);
   }
-  70%  {
+  70% {
     -webkit-transform: translateY(30px);
             transform: translateY(30px);
   }
-  90%  {
+  90% {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
   }
@@ -2022,15 +2021,15 @@ input[type="radio"]:disabled + label::before {
 }
 
 @keyframes bounce {
-  0%   {
+  0% {
     -webkit-transform: translateY(-2000px);
             transform: translateY(-2000px);
   }
-  70%  {
+  70% {
     -webkit-transform: translateY(30px);
             transform: translateY(30px);
   }
-  90%  {
+  90% {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
   }
@@ -2154,16 +2153,16 @@ input[type="radio"]:disabled + label::before {
 }
 
 .modal-write-us input[type="text"]::-webkit-input-placeholder {
-  color:#999999;
+  color: #999999;
 }
 
 .modal-write-us input[type="text"]::-moz-placeholder { /* Firefox 19+ */
-  color:#999999;
+  color: #999999;
   opacity: 1;
 }
 
 .modal-write-us input[type="text"]:-ms-input-placeholder {
-  color:#999999;
+  color: #999999;
 }
 
 .modal-write-us input[type="text"]:focus::-webkit-input-placeholder {
@@ -2189,16 +2188,16 @@ input[type="radio"]:disabled + label::before {
 }
 
 .modal-write-us textarea::-webkit-input-placeholder {
-  color:#999999;
+  color: #999999;
 }
 
 .modal-write-us textarea::-moz-placeholder { /* Firefox 19+ */
-  color:#999999;
+  color: #999999;
   opacity: 1;
 }
 
 .modal-write-us textarea:-ms-input-placeholder {
-  color:#999999;
+  color: #999999;
 }
 
 .modal-write-us textarea:focus::-webkit-input-placeholder {
