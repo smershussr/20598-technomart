@@ -1557,27 +1557,14 @@ main.page-catalog {
   background-color: #444444;
 }
 
-.filter-block-separator {
-  height: 1px;
-  color: #e5e5e5;
-  background-color: #e5e5e5;
-  border: none;
-}
-
-.filter-block-separator:first-of-type {
-  margin-bottom: 16px;
-}
-
-.filter-block-separator:first-of-type + .filter-block {
-  margin-bottom: 22px;
+.filter-block {
+  padding-top: 16px;
+  padding-bottom: 2px;
+  border-top: 1px solid #e5e5e5;
 }
 
 .filter-block-title {
   margin-bottom: 14px;
-}
-
-.filter-block-separator:last-of-type {
-  margin-bottom: 17px;
 }
 
 .filter-block .block-title-supply {
@@ -1657,7 +1644,7 @@ input[type="radio"]:disabled + label::before {
 .catalog-filters .btn-filter {
   width: 140px;
   height: 38px;
-  margin-top: 58px;
+  margin-top: 57px;
   font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-size: 13px;
   color: #000000;
