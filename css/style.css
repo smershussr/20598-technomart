@@ -109,7 +109,7 @@
   font-variant: normal;
   speak: none;
   -webkit-transition-property: color, opacity;
-  transition-property: color, opacity;
+          transition-property: color, opacity;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
   -webkit-transition-timing-function: ease;
@@ -152,7 +152,7 @@ img {
   outline: none;
   cursor: pointer;
   -webkit-transition-property: color, background-color, border-color, opacity;
-  transition-property: color, background-color, border-color, opacity;
+          transition-property: color, background-color, border-color, opacity;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
   -webkit-transition-timing-function: ease;
@@ -188,7 +188,7 @@ img {
   box-shadow: 0 5px 0 0 #b52933;
   cursor: pointer;
   -webkit-transition-property: background-color, border-color;
-  transition-property: background-color, border-color;
+          transition-property: background-color, border-color;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
   -webkit-transition-timing-function: ease;
@@ -226,7 +226,7 @@ form.search {
   cursor: pointer;
   opacity: 0.3;
   -webkit-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease;
+          transition: opacity 0.2s ease;
 }
 
 .btn-search::before {
@@ -321,7 +321,7 @@ input[type="search"]:focus:-ms-input-placeholder {
   text-decoration: none;
   color: #ffffff;
   -webkit-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
+          transition: background-color 0.2s ease;
 }
 
 .bookmarks {
@@ -475,6 +475,12 @@ input[type="search"]:focus:-ms-input-placeholder {
   text-decoration: none;
   color: #000000;
   background-color: #ffffff;
+  -webkit-transition-property: color, opacity;
+          transition-property: color, opacity;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .user-block .user-block-btn {
@@ -544,6 +550,12 @@ input[type="search"]:focus:-ms-input-placeholder {
   line-height: 18px;
   vertical-align: top;
   color: #32425c;
+  -webkit-transition-property: color, opacity;
+          transition-property: color, opacity;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .user-block-active .link-orders {
@@ -609,6 +621,12 @@ input[type="search"]:focus:-ms-input-placeholder {
   vertical-align: top;
   text-decoration: none;
   color: #ffffff;
+  -webkit-transition-property: background-color, box-shadow, opacity;
+          transition-property: background-color, box-shadow, opacity;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .main-menu a:hover {
@@ -891,7 +909,7 @@ main.page-catalog {
 }
 
 .popular-products {
-  margin-bottom: 21px;
+  margin-bottom: 1px;
 }
 
 .popular-products .title-block,
@@ -932,11 +950,14 @@ main.page-catalog {
   float: left;
   width: 218px;
   margin-right: 20px;
+  margin-bottom: 20px;
   font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-weight: bold;
   text-align: center;
   border: 1px solid #e5e5e5;
   overflow: hidden;
+  -webkit-transition: box-shadow 0.2s ease;
+          transition: box-shadow 0.2s ease;
 }
 
 .products-item + .flag-new::after {
@@ -944,7 +965,7 @@ main.page-catalog {
   right: -22px;
 }
 
-.products-item:last-child {
+.products-item:nth-child(4n+4) {
   margin-right: 0;
 }
 
@@ -972,8 +993,6 @@ main.page-catalog {
   padding-left: 0;
   padding-right: 0;
   background-color: #63a63e;
-  /*border-radius: 3px;*/
-
 }
 
 .actions .btn-buy {
@@ -1089,6 +1108,11 @@ main.page-catalog {
   margin-right: 20px;
   margin-bottom: 20px;
   border: 1px solid #e4e4e4;
+  transition-property: opacity, box-shadow;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .brands-list .brands-item:nth-child(4n) {
@@ -1186,6 +1210,8 @@ main.page-catalog {
   border-top: 1px solid #405069;
   border-bottom: 1px solid #293449;
   cursor: pointer;
+  -webkit-transition: background-color 0.2s ease;
+          transition: background-color 0.2s ease;
 }
 
 .slider-menu label:hover {
@@ -1346,6 +1372,8 @@ main.page-catalog {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  -webkit-transition: color 0.2s ease;
+          transition: color 0.2s ease;
 }
 
 .breadcrumbs-item:not(.current):hover {
@@ -1364,7 +1392,7 @@ main.page-catalog {
   font-size: 14px;
   line-height: 20px;
   color: #c1c6ce;
-  pointer-events: none
+  pointer-events: none;
 }
 
 .breadcrumbs-item:first-child::after {
@@ -1556,10 +1584,6 @@ main.page-catalog {
   letter-spacing: 0.01em;
 }
 
-.filter-block-separator:last-of-type + .filter-block {
-  margin-bottom: 78px;
-}
-
 input[type="checkbox"],
 input[type="radio"] {
   margin: 0;
@@ -1633,6 +1657,7 @@ input[type="radio"]:disabled + label::before {
 .catalog-filters .btn-filter {
   width: 140px;
   height: 38px;
+  margin-top: 58px;
   font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-size: 13px;
   color: #000000;
@@ -1684,6 +1709,12 @@ input[type="radio"]:disabled + label::before {
   color: #000000;
   border-bottom: 1px dotted #ee3643;
   opacity: 0.3;
+  -webkit-transition-property: border, opacity;
+          transition-property: border, opacity;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .sorting-options .option:first-child {
@@ -1732,7 +1763,7 @@ input[type="radio"]:disabled + label::before {
   pointer-events: none;
 }
 
-.products .products-item {
+.products-items .products-item {
     float: left;
     width: 218px;
     min-height: 316px;
@@ -1741,7 +1772,7 @@ input[type="radio"]:disabled + label::before {
     border: 1px solid #c5c5c5;
 }
 
-.products .products-item:nth-of-type(3n+3) {
+.products-items .products-item:nth-child(3n+3) {
     margin-right: 0;
 }
 
@@ -1782,21 +1813,14 @@ input[type="radio"]:disabled + label::before {
 
 .products-about {
   padding-top: 68px;
-  padding-bottom: 39px;
+  padding-bottom: 67px;
   background-color: #f2f6f8;
 }
 
 .about-description {
   margin: 0;
-  margin-bottom: -15px;
   padding: 0;
   font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-}
-
-.about-description:last-child {
-  margin-bottom: 30px;
 }
 
 /***************************** ФУТЕР *****************************/
@@ -2138,6 +2162,8 @@ input[type="radio"]:disabled + label::before {
   border: 2px solid #d7dcde;
   border-radius: 3px;
   outline: none;
+  -webkit-transition: border-color 0.2s ease;
+          transition: border-color 0.2s ease;
 }
 
 .modal-write-us input[type="text"]::-webkit-input-placeholder {
