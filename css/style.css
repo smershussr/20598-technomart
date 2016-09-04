@@ -962,6 +962,7 @@ main.page-catalog {
 .products-item + .flag-new::after {
   top: 5px;
   right: -22px;
+  z-index: 1;
 }
 
 .products-item:nth-child(4n+4) {
@@ -977,6 +978,7 @@ main.page-catalog {
   top: 0;
   left: 0;
   right: 0;
+  z-index: -1;
   /*display: none;*/
   height: 88px;
   padding: 43px 0 43px 1px;
@@ -1048,6 +1050,7 @@ main.page-catalog {
 
 .products-item:hover .actions {
   /*display: block;*/
+  z-index: 1;
   opacity: 1;
   pointer-events: auto;
 }
