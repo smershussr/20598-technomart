@@ -395,6 +395,10 @@ input[type="search"]:focus:-ms-input-placeholder {
   background-color: #f1f5f7;
 }
 
+.header-bottom-wrapper {
+  min-height: 72px;
+}
+
 .shop-description,
 .header-contacts {
   float: left;
@@ -602,10 +606,7 @@ input[type="search"]:focus:-ms-input-placeholder {
 }
 
 .main-menu {
-  /*clear: both; - тоже помогает, но у меня есть clearfix в conteiner, а значит это обертк адля флоатов*/
-  float: left;
-  width: 100%;
-  text-align: center;
+  padding: 0 23px;
   background-color: #32425c;
   box-shadow: 0 5px 0 0 #293449;
 }
